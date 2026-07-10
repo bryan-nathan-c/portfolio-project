@@ -1,0 +1,37 @@
+.statement-visual {
+  width: 100%;
+  max-width: 420px;
+  opacity: 0.7;
+}
+
+.sv-line {
+  animation: svLineFade 3s ease-in-out infinite;
+}
+
+.sv-line-0 { animation-delay: 0s; }
+.sv-line-1 { animation-delay: -1s; }
+.sv-line-2 { animation-delay: -2s; }
+
+@keyframes svLineFade {
+  0%, 100% { opacity: 0.4; }
+  50%       { opacity: 1; }
+}
+
+.sv-center-dot {
+  animation: svDotPulse 2.5s ease-in-out infinite;
+}
+
+.sv-center-ring {
+  animation: svRingExpand 2.5s ease-in-out infinite;
+  transform-origin: 200px 150px;
+}
+
+@keyframes svDotPulse {
+  0%, 100% { opacity: 0.8; }
+  50%       { opacity: 1; filter: drop-shadow(0 0 6px #8b5cf6); }
+}
+
+@keyframes svRingExpand {
+  0%   { transform: scale(1); opacity: 0.3; }
+  100% { transform: scale(2.5); opacity: 0; }
+}
