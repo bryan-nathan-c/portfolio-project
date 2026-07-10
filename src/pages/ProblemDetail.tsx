@@ -40,7 +40,7 @@ export default function ProblemDetail() {
       <div className="detail-hero" style={{ '--accent': color } as React.CSSProperties}>
         <div className="detail-hero-glow" style={{ background: `radial-gradient(ellipse at top, ${color}22 0%, transparent 65%)` }} />
         <div className="detail-hero-content">
-          <span className="detail-category" style={{ color }}>{problem.category}</span>
+          <span className="detail-category" style={{ color }}>{problem.category} / {problem.context}</span>
           <h1 className="detail-title">{problem.title}</h1>
           <p className="detail-summary">{problem.summary}</p>
           <div className="detail-tags">

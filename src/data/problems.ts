@@ -3,7 +3,7 @@ export interface Problem {
   title: string
   summary: string
   category: string
-  date: string
+  context: string
   tags: string[]
   problem: string
   investigation: string
@@ -18,7 +18,7 @@ export const problems: Problem[] = [
     summary:
       'LoginSteps.java was importing from the wrong package. The class existed, the path looked right, but Cucumber kept throwing errors because the import was pointing to a repo that was not even open.',
     category: 'Test Automation',
-    date: '2025-01-01',
+    context: 'JayJay, framework project',
     tags: ['Cucumber', 'Selenium', 'Java', 'Import', 'Package'],
     problem:
       'I was building my first automation framework for a QA course called JayJay. I had written all the page classes and step definitions, and everything looked connected. But when I ran the tests, Java kept saying it could not find LoginPage. The file was right there. I could see it. I had no idea why it was not being found.',
@@ -35,7 +35,7 @@ export const problems: Problem[] = [
     summary:
       'My automation kept failing at browser startup with cryptic errors. AI told me to downgrade WebDriverManager. That made it worse. The real fix was in the version numbers the whole time.',
     category: 'Build and Dependencies',
-    date: '2025-01-01',
+    context: 'JayJay, final project setup',
     tags: ['Gradle', 'WebDriverManager', 'Selenium', 'Dependencies', 'Java'],
     problem:
       'After setting up my second project, the tests would start running and then immediately crash when trying to launch Chrome. The error was something like "SessionNotCreatedException" or a driver mismatch. The code was the same structure as my previous project so I knew it was not a logic problem. Something underneath was broken.',
@@ -52,7 +52,7 @@ export const problems: Problem[] = [
     summary:
       'My final project at JayJay took weeks longer than it should have. I was stressed, stuck, and spiraling. What got me through was not a breakthrough moment, it was just deciding to stop panicking and start moving.',
     category: 'Mindset',
-    date: '2025-01-01',
+    context: 'JayJay, final project',
     tags: ['JayJay', 'Final Project', 'Growth', 'Consistency', 'Problem Solving'],
     problem:
       'My final project at JayJay was supposed to wrap up everything I had learned about QA automation. Instead it became the hardest thing I had done. I kept running into errors I could not explain, and the more I failed the more I panicked. I was spending more time imagining all the ways it could go wrong than actually fixing anything.',

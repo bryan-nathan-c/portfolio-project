@@ -78,7 +78,7 @@ export default function Problems() {
                     >
                       {p.category}
                     </span>
-                    <span className="problem-row-date">{p.date}</span>
+                    <span className="problem-row-date">{p.context}</span>
                   </div>
                   <h2 className="problem-row-title">{p.title}</h2>
                   <p className="problem-row-summary">{p.summary}</p>
