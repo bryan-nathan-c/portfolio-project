@@ -50,17 +50,17 @@ export const problems: Problem[] = [
     id: 'final-project-jayjay',
     title: 'Two Weeks of Being Lost, Then Finally Getting It',
     summary:
-      'My final project at JayJay took weeks longer than it should have. I was stressed, stuck, and spiraling. What got me through was not a breakthrough moment, it was just deciding to stop panicking and start moving.',
+      'My final project at JayJay was supposed to show everything I learned. Instead the build kept breaking, the CI kept failing, and I could not figure out why. The commit history tells the whole story.',
     category: 'Mindset',
     context: 'JayJay, final project',
     tags: ['JayJay', 'Final Project', 'Growth', 'Consistency', 'Problem Solving'],
     problem:
-      'My final project at JayJay was supposed to wrap up everything I had learned about QA automation. Instead it became the hardest thing I had done. I kept running into errors I could not explain, and the more I failed the more I panicked. I was spending more time imagining all the ways it could go wrong than actually fixing anything.',
+      'My final project was a full QA automation framework covering both UI and API testing, running on GitHub Actions. The code itself was fine but the project kept refusing to build. Gradle could not resolve dependencies, the Cucumber runners were not picking up the right tests, and the HTML reports were throwing an ENOTDIR error in CI. Every time I fixed one thing, something else broke. I made over 20 commits in two days just trying to get it to run.',
     investigation:
-      'I talked to my mentor and some classmates about it. They helped me see that I was trying to solve everything at once instead of breaking it down. One of my classmates told me to just pick one error and ignore the rest for now. That advice actually changed how I approached the whole thing.',
+      'I went through it with my mentor and a classmate named Rizqi who ended up opening a pull request to help fix the failing test cases and runners. We found that the JUnit version was conflicting with the Cucumber runner setup, the report output paths were wrong for how CI handled directories, and some dependencies were under the wrong scope in build.gradle. None of these errors were obvious on their own, but they were all connected.',
     solution:
-      'I slowed down. I stopped trying to solve everything at once and just picked one error, fixed it, then moved to the next. Consistency over intensity. Some days I made almost no progress, but I kept showing up. That was the whole thing.',
+      'Fixed the Gradle config to use the right JUnit runner for Cucumber, corrected the HTML report plugin paths to include the full file path so CI would not throw ENOTDIR, and sorted out the dependency scopes. Merged Rizqi\'s PR, did a few more fixes on the GitHub Actions workflow, and finally got a clean run.',
     outcome:
-      'I finished the project and it passed review. But what I actually got out of it was bigger than that. I learned that grit is not about being fearless, it is about keep going even when you are scared. And I learned to stop stressing about the future and just live in what is actually in front of me right now.',
+      'The project passed review and the CI pipeline ran green. But the bigger thing I took from this was about how I handle pressure. I kept spiraling instead of slowing down and reading the errors properly. Once I started treating each error one at a time instead of trying to fix everything at once, things started to move. And working through it with Rizqi showed me how much faster you get unstuck when you actually collaborate.',
   },
 ]
