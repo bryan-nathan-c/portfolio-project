@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom'
 import { problems } from '../data/problems'
+import HeroVisual from '../components/HeroVisual'
+import '../components/HeroVisual.css'
 import './Home.css'
 
 const categoryColors: Record<string, string> = {
@@ -12,21 +14,18 @@ const projects = [
   {
     name: 'bryan-automation-portfolio',
     desc: 'Final project. UI + API testing, GitHub Actions CI/CD. Took a few weeks and broke more times than I can remember.',
-    lang: 'Java',
     langColor: '#f59e0b',
     url: 'https://github.com/bryan-nathan-c/bryan-automation-portfolio',
   },
   {
     name: 'cucumber-selenium-gradle-framework',
     desc: 'BDD framework with Selenium. This is the one where the import was pointing at the wrong repo for days.',
-    lang: 'Java',
     langColor: '#f59e0b',
     url: 'https://github.com/bryan-nathan-c/cucumber-selenium-gradle-framework',
   },
   {
     name: 'gradle-greeting-task',
     desc: 'Small one. Just me getting used to writing custom Gradle tasks with CLI params.',
-    lang: 'Gradle',
     langColor: '#22c55e',
     url: 'https://github.com/bryan-nathan-c/gradle-greeting-task',
   },
@@ -37,12 +36,11 @@ export default function Home() {
     <main className="home">
 
       <section className="hero">
+        <HeroVisual />
         <div className="hero-content">
-          <span className="hero-tag">gap year, Indonesia</span>
-          <span className="hero-tag">This is how I learn.</span>
-          <h1 className="hero-title">
-            Learning by doing
-          </h1>
+          <span className="hero-tag">curious by nature, disciplined by choice</span>
+          <span className="hero-tag">I build, break, and figure it out.</span>
+          <h1 className="hero-title">Learning by doing</h1>
           <p className="hero-sub">
             Spent my gap year learning QA automation at JayJay. Hit a lot of walls.
             Got through all of them. This site is the honest version of that.

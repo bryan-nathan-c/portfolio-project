@@ -1,52 +1,68 @@
 export default function HeroVisual() {
   return (
     <div className="hero-visual" aria-hidden="true">
-      {/* Floating orbs */}
+
+      {/* Blurry orbs */}
       <div className="orb orb-1" />
       <div className="orb orb-2" />
       <div className="orb orb-3" />
 
-      {/* Animated grid */}
+      {/* Dot grid */}
       <svg className="hero-grid" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
         <defs>
-          <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
-            <path d="M 60 0 L 0 0 0 60" fill="none" stroke="rgba(255,255,255,0.03)" strokeWidth="1"/>
+          <pattern id="dotgrid" width="40" height="40" patternUnits="userSpaceOnUse">
+            <circle cx="1" cy="1" r="1" fill="rgba(247,147,26,0.18)" />
           </pattern>
         </defs>
-        <rect width="100%" height="100%" fill="url(#grid)" />
+        <rect width="100%" height="100%" fill="url(#dotgrid)" />
       </svg>
 
-      {/* Glowing ring */}
-      <svg className="hero-ring" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="300" cy="300" r="240" fill="none" stroke="url(#ringGrad)" strokeWidth="1" strokeDasharray="6 14" />
-        <circle cx="300" cy="300" r="180" fill="none" stroke="rgba(247,147,26,0.05)" strokeWidth="1" />
-        <circle cx="300" cy="300" r="120" fill="none" stroke="rgba(251,191,36,0.04)" strokeWidth="1" />
+      {/* Spinning dashed ring */}
+      <svg className="hero-ring" viewBox="0 0 700 700" xmlns="http://www.w3.org/2000/svg">
         <defs>
           <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stopColor="#f7931a" stopOpacity="0.3" />
-            <stop offset="50%" stopColor="#fbbf24" stopOpacity="0.08" />
-            <stop offset="100%" stopColor="#f7931a" stopOpacity="0.2" />
+            <stop offset="0%" stopColor="#f7931a" stopOpacity="0.7" />
+            <stop offset="35%" stopColor="#fbbf24" stopOpacity="0.2" />
+            <stop offset="100%" stopColor="#f7931a" stopOpacity="0.55" />
           </linearGradient>
         </defs>
+        <circle cx="350" cy="350" r="300" fill="none" stroke="url(#ringGrad)" strokeWidth="1.5" strokeDasharray="10 18" />
+        <circle cx="350" cy="350" r="220" fill="none" stroke="rgba(247,147,26,0.18)" strokeWidth="1" strokeDasharray="4 12" />
+        <circle cx="350" cy="350" r="140" fill="none" stroke="rgba(251,191,36,0.12)" strokeWidth="1" />
       </svg>
 
-      {/* Floating dots */}
+      {/* Pulsing dots */}
       <svg className="hero-dots" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
         {[
-          [120, 80], [680, 120], [200, 480], [640, 420],
-          [380, 60], [740, 300], [60, 300], [420, 520],
-          [300, 160], [560, 200],
+          [100, 70], [700, 100], [180, 490], [650, 410],
+          [390, 50], [760, 290], [50, 310], [430, 530],
+          [280, 155], [570, 195], [140, 360], [710, 450],
+          [490, 80], [220, 250], [600, 340],
         ].map(([cx, cy], i) => (
           <circle
             key={i}
             cx={cx}
             cy={cy}
-            r="2"
-            fill="rgba(247,147,26,0.5)"
+            r="2.5"
+            fill="#f7931a"
             className={`dot dot-${i % 3}`}
           />
         ))}
       </svg>
+
+      {/* Animated horizontal lines */}
+      <svg className="hero-lines" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+        {[120, 240, 380, 480].map((y, i) => (
+          <line
+            key={y}
+            x1="0" y1={y} x2="800" y2={y}
+            stroke="#f7931a"
+            strokeWidth="0.5"
+            className={`hline hline-${i % 3}`}
+          />
+        ))}
+      </svg>
+
     </div>
   )
 }

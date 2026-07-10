@@ -6,55 +6,52 @@
   z-index: 0;
 }
 
-/* Grid */
 .hero-grid {
   position: absolute;
   inset: 0;
-  opacity: 1;
 }
 
 /* Orbs */
 .orb {
   position: absolute;
   border-radius: 50%;
-  filter: blur(80px);
-  animation: orbFloat 8s ease-in-out infinite;
+  filter: blur(60px);
+  animation: orbFloat 7s ease-in-out infinite;
 }
 
 .orb-1 {
-  width: 500px;
-  height: 500px;
+  width: 480px;
+  height: 480px;
   top: -15%;
-  left: -10%;
-  background: radial-gradient(circle, rgba(247, 147, 26, 0.09) 0%, transparent 70%);
-  animation-delay: 0s;
+  left: -12%;
+  background: radial-gradient(circle, rgba(247,147,26,0.35) 0%, transparent 60%);
 }
 
 .orb-2 {
-  width: 400px;
-  height: 400px;
+  width: 380px;
+  height: 380px;
   top: 20%;
   right: -10%;
-  background: radial-gradient(circle, rgba(247, 147, 26, 0.06) 0%, transparent 70%);
-  animation-delay: -3s;
+  background: radial-gradient(circle, rgba(251,191,36,0.25) 0%, transparent 60%);
+  animation-delay: -2.5s;
 }
 
 .orb-3 {
   width: 300px;
   height: 300px;
-  bottom: 10%;
-  left: 30%;
-  background: radial-gradient(circle, rgba(251, 191, 36, 0.05) 0%, transparent 70%);
-  animation-delay: -5s;
+  bottom: 0%;
+  left: 20%;
+  background: radial-gradient(circle, rgba(247,147,26,0.2) 0%, transparent 60%);
+  animation-delay: -4.5s;
 }
 
 @keyframes orbFloat {
-  0%, 100% { transform: translateY(0px) scale(1); }
-  33%       { transform: translateY(-30px) scale(1.04); }
-  66%       { transform: translateY(20px) scale(0.97); }
+  0%, 100% { transform: translateY(0) scale(1); }
+  40%       { transform: translateY(-30px) scale(1.06); }
+  70%       { transform: translateY(18px) scale(0.95); }
 }
 
-/* Ring */
+/* Spinning ring */
 .hero-ring {
   position: absolute;
   width: 700px;
@@ -62,8 +59,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  animation: ringRotate 30s linear infinite;
-  opacity: 0.6;
+  animation: ringRotate 22s linear infinite;
 }
 
 @keyframes ringRotate {
@@ -71,7 +67,7 @@
   to   { transform: translate(-50%, -50%) rotate(360deg); }
 }
 
-/* Dots */
+/* Pulsing dots */
 .hero-dots {
   position: absolute;
   inset: 0;
@@ -80,14 +76,33 @@
 }
 
 .dot {
-  animation: dotPulse 4s ease-in-out infinite;
+  animation: dotPulse 3s ease-in-out infinite;
 }
-
 .dot-0 { animation-delay: 0s; }
-.dot-1 { animation-delay: -1.5s; }
-.dot-2 { animation-delay: -3s; }
+.dot-1 { animation-delay: -1s; }
+.dot-2 { animation-delay: -2s; }
 
 @keyframes dotPulse {
-  0%, 100% { opacity: 0.3; r: 2; }
-  50%       { opacity: 1; r: 3.5; }
+  0%, 100% { opacity: 0.2; }
+  50%       { opacity: 0.9; }
+}
+
+/* Floating lines */
+.hero-lines {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hline {
+  animation: lineFade 5s ease-in-out infinite;
+}
+.hline-0 { animation-delay: 0s; }
+.hline-1 { animation-delay: -1.7s; }
+.hline-2 { animation-delay: -3.4s; }
+
+@keyframes lineFade {
+  0%, 100% { opacity: 0.04; }
+  50%       { opacity: 0.12; }
 }
