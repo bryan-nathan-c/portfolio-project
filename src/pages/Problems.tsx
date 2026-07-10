@@ -4,9 +4,9 @@ import { problems } from '../data/problems'
 import './Problems.css'
 
 const categoryColors: Record<string, string> = {
-  'Test Automation': '#f59e0b',
-  'Build and Dependencies': '#3b82f6',
-  'Mindset': '#8b5cf6',
+  'Test Automation': '#f7931a',
+  'Build and Dependencies': '#60a5fa',
+  'Mindset': '#c084fc',
 }
 
 export default function Problems() {

@@ -22,13 +22,13 @@
 .footer-name {
   font-size: 0.8rem;
   font-weight: 600;
-  color: #64748b;
+  color: #7a8190;
   letter-spacing: -0.01em;
 }
 
 .footer-sub {
   font-size: 0.72rem;
-  color: #475569;
+  color: #4a5060;
   font-family: var(--mono, monospace);
 }
 
@@ -39,11 +39,9 @@
 
 .footer-link {
   font-size: 0.82rem;
-  color: #475569;
+  color: #4a5060;
   text-decoration: none;
   transition: color 0.15s;
 }
 
-.footer-link:hover {
-  color: #94a3b8;
-}
+.footer-link:hover { color: #9aa0ad; }

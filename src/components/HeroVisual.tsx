@@ -19,13 +19,13 @@ export default function HeroVisual() {
       {/* Glowing ring */}
       <svg className="hero-ring" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
         <circle cx="300" cy="300" r="240" fill="none" stroke="url(#ringGrad)" strokeWidth="1" strokeDasharray="6 14" />
-        <circle cx="300" cy="300" r="180" fill="none" stroke="rgba(34,197,94,0.06)" strokeWidth="1" />
-        <circle cx="300" cy="300" r="120" fill="none" stroke="rgba(74,222,128,0.04)" strokeWidth="1" />
+        <circle cx="300" cy="300" r="180" fill="none" stroke="rgba(247,147,26,0.05)" strokeWidth="1" />
+        <circle cx="300" cy="300" r="120" fill="none" stroke="rgba(251,191,36,0.04)" strokeWidth="1" />
         <defs>
           <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stopColor="#22c55e" stopOpacity="0.35" />
-            <stop offset="50%" stopColor="#4ade80" stopOpacity="0.08" />
-            <stop offset="100%" stopColor="#16a34a" stopOpacity="0.25" />
+            <stop offset="0%" stopColor="#f7931a" stopOpacity="0.3" />
+            <stop offset="50%" stopColor="#fbbf24" stopOpacity="0.08" />
+            <stop offset="100%" stopColor="#f7931a" stopOpacity="0.2" />
           </linearGradient>
         </defs>
       </svg>
@@ -42,7 +42,7 @@ export default function HeroVisual() {
             cx={cx}
             cy={cy}
             r="2"
-            fill="rgba(34,197,94,0.6)"
+            fill="rgba(247,147,26,0.5)"
             className={`dot dot-${i % 3}`}
           />
         ))}

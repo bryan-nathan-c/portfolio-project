@@ -1,6 +1,4 @@
-.problems-page {
-  min-height: 100vh;
-}
+.problems-page { min-height: 100vh; }
 
 .problems-hero {
   padding: 10rem 2rem 5rem;
@@ -12,7 +10,7 @@
   font-size: 0.72rem;
   font-weight: 500;
   font-family: var(--mono, monospace);
-  color: #22c55e;
+  color: #f7931a;
   margin-bottom: 1rem;
   letter-spacing: 0.04em;
 }
@@ -20,7 +18,7 @@
 .problems-title {
   font-size: clamp(2.2rem, 5vw, 3.5rem);
   font-weight: 900;
-  color: #f1f5f9;
+  color: #f0f2f5;
   letter-spacing: -0.03em;
   line-height: 1.1;
   margin-bottom: 1rem;
@@ -28,7 +26,7 @@
 
 .problems-subtitle {
   font-size: 1rem;
-  color: #94a3b8;
+  color: #9aa0ad;
   line-height: 1.75;
 }
 
@@ -49,9 +47,9 @@
   width: 100%;
   padding: 0.75rem 1rem;
   background: rgba(255,255,255,0.04);
-  border: 1px solid rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.09);
   border-radius: 10px;
-  color: #e2e8f0;
+  color: #e8eaf0;
   font-size: 0.9rem;
   outline: none;
   box-sizing: border-box;
@@ -59,12 +57,10 @@
   font-family: inherit;
 }
 
-.search-input::placeholder {
-  color: #475569;
-}
+.search-input::placeholder { color: #4a5060; }
 
 .search-input:focus {
-  border-color: rgba(34, 197, 94, 0.45);
+  border-color: rgba(247, 147, 26, 0.45);
 }
 
 .category-pills {
@@ -79,30 +75,31 @@
   font-size: 0.8rem;
   font-weight: 500;
   cursor: pointer;
-  border: 1px solid rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.09);
   background: transparent;
-  color: #64748b;
+  color: #7a8190;
   transition: all 0.15s;
   font-family: inherit;
 }
 
 .pill:hover {
-  color: #cbd5e1;
-  border-color: rgba(255,255,255,0.2);
+  color: #c9cdd6;
+  border-color: rgba(255,255,255,0.18);
 }
 
 .pill-active {
-  background: rgba(34, 197, 94, 0.12);
-  border-color: rgba(34, 197, 94, 0.4);
-  color: #4ade80;
+  background: rgba(247, 147, 26, 0.12);
+  border-color: rgba(247, 147, 26, 0.4);
+  color: #f7931a;
 }
 
 .results-count {
   font-size: 0.78rem;
-  color: #475569;
+  color: #4a5060;
   margin: 0 0 1.75rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
+  font-family: var(--mono, monospace);
 }
 
 .problems-list {
@@ -116,30 +113,26 @@
   gap: 1.25rem;
   align-items: start;
   padding: 1.75rem 0;
-  border-bottom: 1px solid rgba(255,255,255,0.07);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
   text-decoration: none;
   transition: all 0.2s;
 }
 
 .problem-row:first-child {
-  border-top: 1px solid rgba(255,255,255,0.07);
+  border-top: 1px solid rgba(255,255,255,0.06);
 }
 
-.problem-row:hover .problem-row-title {
-  color: #f1f5f9;
-}
-
+.problem-row:hover .problem-row-title { color: #f0f2f5; }
 .problem-row:hover .problem-row-arrow {
-  color: #94a3b8;
+  color: #9aa0ad;
   transform: translateX(4px);
 }
 
 .problem-row-num {
   font-size: 0.72rem;
   font-weight: 700;
-  color: #334155;
+  color: #2e3340;
   padding-top: 0.2rem;
-  font-variant-numeric: tabular-nums;
   font-family: var(--mono, monospace);
 }
 
@@ -164,14 +157,14 @@
 
 .problem-row-date {
   font-size: 0.75rem;
-  color: #475569;
+  color: #4a5060;
   font-family: var(--mono, monospace);
 }
 
 .problem-row-title {
   font-size: 1.05rem;
   font-weight: 700;
-  color: #e2e8f0;
+  color: #d8dce5;
   margin: 0;
   line-height: 1.3;
   letter-spacing: -0.01em;
@@ -180,7 +173,7 @@
 
 .problem-row-summary {
   font-size: 0.875rem;
-  color: #64748b;
+  color: #7a8190;
   margin: 0;
   line-height: 1.65;
 }
@@ -198,13 +191,13 @@
   padding: 0.18rem 0.55rem;
   border-radius: 100px;
   background: rgba(255,255,255,0.05);
-  color: #64748b;
+  color: #7a8190;
   border: 1px solid rgba(255,255,255,0.08);
 }
 
 .problem-row-arrow {
   font-size: 1rem;
-  color: #334155;
+  color: #2e3340;
   padding-top: 0.15rem;
   transition: color 0.2s, transform 0.2s;
   flex-shrink: 0;
@@ -212,15 +205,11 @@
 
 .no-results {
   padding: 4rem 0;
-  color: #475569;
+  color: #4a5060;
   font-size: 0.95rem;
 }
 
 @media (max-width: 600px) {
-  .problem-row {
-    grid-template-columns: 1fr 24px;
-  }
-  .problem-row-num {
-    display: none;
-  }
+  .problem-row { grid-template-columns: 1fr 24px; }
+  .problem-row-num { display: none; }
 }

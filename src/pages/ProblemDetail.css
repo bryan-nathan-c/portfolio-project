@@ -13,16 +13,14 @@
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
-  color: #64748b;
+  color: #7a8190;
   text-decoration: none;
   font-size: 0.875rem;
   font-weight: 500;
   transition: color 0.2s;
 }
 
-.back-link:hover {
-  color: #94a3b8;
-}
+.back-link:hover { color: #c9cdd6; }
 
 .detail-hero {
   position: relative;
@@ -58,7 +56,7 @@
 .detail-title {
   font-size: clamp(1.8rem, 4.5vw, 2.8rem);
   font-weight: 900;
-  color: #f1f5f9;
+  color: #f0f2f5;
   margin: 0 0 1.25rem;
   line-height: 1.1;
   letter-spacing: -0.03em;
@@ -66,7 +64,7 @@
 
 .detail-summary {
   font-size: 1.05rem;
-  color: #94a3b8;
+  color: #9aa0ad;
   line-height: 1.75;
   margin: 0 0 1.75rem;
 }
@@ -84,8 +82,8 @@
   padding: 0.2rem 0.65rem;
   border-radius: 100px;
   background: rgba(255,255,255,0.05);
-  color: #64748b;
-  border: 1px solid rgba(255,255,255,0.09);
+  color: #7a8190;
+  border: 1px solid rgba(255,255,255,0.08);
 }
 
 .detail-body {
@@ -107,7 +105,7 @@
 .step-num {
   font-size: 0.7rem;
   font-weight: 700;
-  color: #334155;
+  color: #2e3340;
   letter-spacing: 0.05em;
   padding-top: 0.35rem;
   font-family: var(--mono, monospace);
@@ -118,13 +116,13 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: #475569;
+  color: #4a5060;
   margin-bottom: 0.65rem;
 }
 
 .step-body {
   font-size: 1rem;
-  color: #cbd5e1;
+  color: #c9cdd6;
   line-height: 1.85;
 }
 
@@ -135,7 +133,7 @@
   max-width: 780px;
   margin: 0 auto;
   padding: 2.5rem 2rem 6rem;
-  border-top: 1px solid rgba(255,255,255,0.08);
+  border-top: 1px solid rgba(255,255,255,0.07);
 }
 
 .detail-nav-link {
@@ -146,37 +144,32 @@
   border-radius: 10px;
   text-decoration: none;
   background: rgba(255,255,255,0.03);
-  border: 1px solid rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.07);
   transition: all 0.2s;
 }
 
 .detail-nav-link:hover {
-  background: rgba(255,255,255,0.06);
-  border-color: rgba(255,255,255,0.14);
+  background: rgba(255,255,255,0.05);
+  border-color: rgba(247, 147, 26, 0.25);
 }
 
-.detail-nav-right {
-  text-align: right;
-}
+.detail-nav-right { text-align: right; }
 
 .detail-nav-dir {
   font-size: 0.75rem;
-  color: #475569;
+  color: #4a5060;
   font-weight: 500;
 }
 
 .detail-nav-title {
   font-size: 0.9rem;
   font-weight: 600;
-  color: #94a3b8;
+  color: #9aa0ad;
   line-height: 1.3;
 }
 
 @media (max-width: 600px) {
-  .step-block {
-    grid-template-columns: 1fr;
-    gap: 0.5rem;
-  }
+  .step-block { grid-template-columns: 1fr; gap: 0.5rem; }
   .step-num { display: none; }
   .detail-nav { grid-template-columns: 1fr; }
 }
