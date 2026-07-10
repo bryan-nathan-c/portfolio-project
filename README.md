@@ -1,32 +1,45 @@
-# React + TypeScript + Vite
+# Bryan's Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A personal portfolio website built to showcase my projects and background — created as part of my application to the Apple Developer Academy.
 
-Currently, two official plugins are available:
+🔗 **Live site:** [portfolio-project.bryan-apple.workers.dev](https://portfolio-project.bryan-apple.workers.dev)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Tech Stack
 
-## React Compiler
+- **React** + **TypeScript**
+- **Vite** for build tooling and HMR
+- **Cloudflare Workers** for deployment
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Getting Started
 
-## Expanding the Oxlint configuration
+Install dependencies:
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+```bash
+npm install
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+Run the dev server:
+
+```bash
+npm run dev
+```
+
+Build for production:
+
+```bash
+npm run build
+```
+
+Deploy to Cloudflare Workers:
+
+```bash
+npx wrangler deploy
+```
+
+## About This Project
+
+This portfolio highlights my work and interests in iOS/Swift development, with an Xcode-inspired design. It's a work in progress as I continue to add real project details and refine the content.
+
+## License
+
+Personal project — all rights reserved.
