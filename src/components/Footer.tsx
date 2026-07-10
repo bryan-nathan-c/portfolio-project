@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="footer-inner">
         <div className="footer-left">
           <span className="footer-name">Bryan Nathaniel Chandra</span>
-          <span className="footer-sub">Apple Developer Academy Applicant</span>
+          <span className="footer-sub">gap year, Indonesia</span>
         </div>
         <div className="footer-links">
           <a href="https://github.com/bryan-nathan-c" target="_blank" rel="noreferrer" className="footer-link">
