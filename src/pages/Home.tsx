@@ -36,7 +36,6 @@ export default function Home() {
     <main className="home">
 
       <section className="hero">
-        <HeroVisual />
         <div className="hero-content">
           <span className="hero-tag">18 y/o from Indonesia.</span>
           <span className="hero-tag">Spent my gap year breaking things and figuring them out.</span>
