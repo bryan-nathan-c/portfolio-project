@@ -35,7 +35,7 @@ export default function Home() {
 
       <section className="hero">
         <div className="hero-content">
-          <span className="hero-tag">gap year, Indonesia</span>
+          <span className="hero-tag">What did my gap year teach me?</span>
           <h1 className="hero-title">Learning by doing</h1>
           <p className="hero-sub">
             Spent my gap year learning QA automation at JayJay. Hit a lot of walls.

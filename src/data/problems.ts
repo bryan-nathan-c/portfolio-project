@@ -31,20 +31,20 @@ export const problems: Problem[] = [
   },
   {
     id: 'webdrivermanager-version-conflict',
-    title: 'WebDriver Kept Crashing and AI Was Making It Worse',
+    title: 'My Browser Kept Crashing Before a Single Test Could Run',
     summary:
-      'My automation kept failing at browser startup with cryptic errors. AI told me to downgrade WebDriverManager. That made it worse. The real fix was in the version numbers the whole time.',
+      'Every time I ran the tests, Chrome crashed before anything happened. I spent days trying to figure out why, going through docs and asking around, until I found the issue was in how I set up the dependencies.',
     category: 'Build and Dependencies',
     context: 'JayJay, final project setup',
     tags: ['Gradle', 'WebDriverManager', 'Selenium', 'Dependencies', 'Java'],
     problem:
-      'After setting up my second project, the tests would start running and then immediately crash when trying to launch Chrome. The error was something like "SessionNotCreatedException" or a driver mismatch. The code was the same structure as my previous project so I knew it was not a logic problem. Something underneath was broken.',
+      'After setting up my second project, the tests would start and then immediately crash when trying to launch Chrome. The error said something like "SessionNotCreatedException". I had no idea what that meant. The code looked the same as my previous project, so I knew it was not about the test logic. Something in the setup was wrong but I could not see what.',
     investigation:
-      'I talked to my mentor about it and searched through forums and the official docs together with a classmate. We found conflicting answers everywhere. Eventually I cross-referenced the WebDriverManager and Selenium documentation side by side and found that `webdrivermanager:6.3.1` needs to be paired with `selenium-java:4.x` and that putting WebDriverManager under `implementation` instead of `testImplementation` causes the driver to not be available during test execution.',
+      'I asked my mentor and went through forums and docs with a classmate. We tried a bunch of things but kept getting different results. After a few days of going back and forth, I decided to slow down and actually read the WebDriverManager and Selenium documentation properly instead of just searching for quick fixes. That was when I found the issue: the two libraries had version compatibility requirements I had not checked, and I had placed WebDriverManager under the wrong scope in build.gradle, which meant the driver was not even available at the time the tests ran.',
     solution:
-      'In build.gradle, moved `webdrivermanager` to `testImplementation` to match where Selenium was scoped. Also aligned the Selenium and WebDriverManager versions to ones confirmed compatible in the official docs. Re-ran `./gradlew test` and the browser launched cleanly.',
+      'Moved `webdrivermanager` from `implementation` to `testImplementation` in build.gradle and matched the version numbers to ones confirmed compatible in the docs. Re-ran the tests and Chrome launched cleanly.',
     outcome:
-      'Browser startup worked from that point on. I also stopped trusting AI for dependency issues because it does not know your exact project context. Reading the official docs yourself is slower but it is the only thing that is actually accurate.',
+      'Everything worked after that. The main thing I learned was to actually read the documentation properly instead of just skimming for a quick answer. The fix was always there, I just had not been patient enough to find it.',
   },
   {
     id: 'final-project-jayjay',
