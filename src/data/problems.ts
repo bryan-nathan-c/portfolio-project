@@ -55,12 +55,12 @@ export const problems: Problem[] = [
     context: 'JayJay, final project',
     tags: ['JayJay', 'Final Project', 'Growth', 'Consistency', 'Problem Solving'],
     problem:
-      'My final project at JayJay was a full automation framework with UI tests, API tests, and a GitHub Actions pipeline. The code was fine but the project would not build. Gradle kept failing to resolve things, the Cucumber runners were not picking up the right tests, and the reports were throwing some ENOTDIR error in CI. Every time I fixed one thing, something else broke. I was making commit after commit and going nowhere.',
+      'My final project was supposed to be the big one. Full automation framework, UI tests, API tests, running on GitHub Actions. I thought I was ready. Then I ran it and nothing worked. The build failed, the tests did not run, the reports crashed. I kept pushing fixes and kept breaking something else. At some point I had made over 20 commits and still had nothing to show.',
     investigation:
-      'I talked through it with my mentor and a classmate named Rizqi. He ended up opening a pull request to help fix the failing test cases and runners. Together we figured out that the JUnit version was clashing with the Cucumber setup, the report paths were wrong for how CI handles directories, and some dependencies were in the wrong scope. None of them were obvious on their own but once we connected the dots it made sense.',
+      'I talked with my mentor and went through it with a classmate named Rizqi. He actually opened a pull request to help me fix the broken test runners. We found a few things all happening at the same time: the JUnit version was clashing with Cucumber, the report file paths were set up wrong so CI kept throwing errors, and some libraries were in the wrong place in the build file. None of it was obvious until we sat down and looked at it together.',
     solution:
-      'Fixed the Gradle config, corrected the report file paths so CI would not throw errors, sorted out the scopes, and merged Rizqi\'s PR. Then cleaned up the GitHub Actions workflow. Finally got a green run.',
+      'Fixed the build config, corrected the report paths, moved the libraries to the right place, and merged what Rizqi sent. Then cleaned up the GitHub Actions file. Finally got everything green.',
     outcome:
-      'Project passed review. But more than that I learned that when I am stuck and stressed I stop thinking clearly. Once I started dealing with one error at a time instead of panicking about all of them, things moved. And honestly having Rizqi to work through it with made a huge difference.',
+      'It passed. But honestly the biggest thing I got from this was realizing that when I am stressed I stop thinking straight. I was trying to fix ten things at once and making it worse. Once I slowed down and just focused on one thing at a time, it started working. And Rizqi helping made a huge difference too.',
   },
 ]
