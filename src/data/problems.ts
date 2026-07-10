@@ -16,51 +16,51 @@ export const problems: Problem[] = [
     id: 'wrong-package-import',
     title: 'My Tests Could Not Find the Page Classes I Wrote',
     summary:
-      'LoginSteps.java was importing from the wrong package. The class existed, the path looked right, but Cucumber kept throwing errors because the import was pointing to a repo that was not even open.',
+      'Everything looked fine but the tests kept failing. Turned out one line of code was pointing to the wrong place the whole time.',
     category: 'Test Automation',
     context: 'JayJay, framework project',
     tags: ['Cucumber', 'Selenium', 'Java', 'Import', 'Package'],
     problem:
-      'I was building my first automation framework for a QA course called JayJay. I had written all the page classes and step definitions, and everything looked connected. But when I ran the tests, Java kept saying it could not find LoginPage. The file was right there. I could see it. I had no idea why it was not being found.',
+      'I was building my first automation framework at JayJay. I wrote all the page classes, connected everything up, and ran the tests. But Java kept saying it could not find LoginPage. I could literally see the file sitting there. I had no idea what was going on.',
     investigation:
-      'I asked my mentor and looked it up online, but the answers I got were too general to help. I went back to my mentor a second time with more specific details, and he pointed me toward the import section. That was when I slowed down and actually read the import line at the top of LoginSteps.java properly. It said `import com.nathan.pages.LoginPage`. But my project package was not `com.nathan`, it was just `pages`. That import was left over from a completely different repository I had worked on earlier.',
+      'I asked my mentor and searched online but the answers I got were too general. I went back to my mentor again with more details and he pointed me to the import section. That is when I actually stopped and read the import line properly. It said import com.nathan.pages.LoginPage but my project was not using that package at all. That line was left over from a different project I had worked on before.',
     solution:
-      'Changed the import from `import com.nathan.pages.LoginPage` to `import pages.LoginPage` to match the actual package structure of the current project. One line. That was it.',
+      'Changed the import to match the actual package in this project. One line fix. That was it.',
     outcome:
-      'The tests ran immediately. No other changes needed. I learned that when nothing makes sense, go back to the most basic thing, read every line as if you have never seen it before. The bug was not hidden. I just had not actually read it.',
+      'Tests ran right away. I felt pretty dumb honestly, but I learned that when nothing makes sense you just have to slow down and read everything again like you are seeing it for the first time.',
   },
   {
     id: 'webdrivermanager-version-conflict',
-    title: 'My Browser Kept Crashing Before a Single Test Could Run',
+    title: 'Chrome Kept Crashing Before Any Test Could Even Start',
     summary:
-      'Every time I ran the tests, Chrome crashed before anything happened. I spent days trying to figure out why, going through docs and asking around, until I found the issue was in how I set up the dependencies.',
+      'Every time I ran the tests, Chrome crashed immediately. The code looked fine. It took me days of digging through docs with a classmate to find out the problem was in how I set up the dependencies.',
     category: 'Build and Dependencies',
     context: 'JayJay, final project setup',
     tags: ['Gradle', 'WebDriverManager', 'Selenium', 'Dependencies', 'Java'],
     problem:
-      'After setting up my second project, the tests would start and then immediately crash when trying to launch Chrome. The error said something like "SessionNotCreatedException". I had no idea what that meant. The code looked the same as my previous project, so I knew it was not about the test logic. Something in the setup was wrong but I could not see what.',
+      'I set up my second project and ran the tests. Chrome opened for a second and then immediately crashed. The error said SessionNotCreatedException. I had no idea what that meant. The code looked exactly the same as my previous project so I knew the test logic was not the issue. Something in the setup was off but I could not see what.',
     investigation:
-      'I asked my mentor and went through forums and docs with a classmate. We tried a bunch of things but kept getting different results. After a few days of going back and forth, I decided to slow down and actually read the WebDriverManager and Selenium documentation properly instead of just searching for quick fixes. That was when I found the issue: the two libraries had version compatibility requirements I had not checked, and I had placed WebDriverManager under the wrong scope in build.gradle, which meant the driver was not even available at the time the tests ran.',
+      'Me and a classmate went through forums and docs together. We kept trying different things but nothing worked. After a few days I decided to just actually read the WebDriverManager and Selenium docs properly side by side instead of skimming for a quick answer. That is when I found it. The two libraries needed to be specific versions to work together, and I had also put WebDriverManager in the wrong place in build.gradle, so the driver was not even available when the tests ran.',
     solution:
-      'Moved `webdrivermanager` from `implementation` to `testImplementation` in build.gradle and matched the version numbers to ones confirmed compatible in the docs. Re-ran the tests and Chrome launched cleanly.',
+      'Moved WebDriverManager to the right scope in build.gradle and matched the version numbers to what the docs said was compatible. Ran the tests again and Chrome opened fine.',
     outcome:
-      'Everything worked after that. The main thing I learned was to actually read the documentation properly instead of just skimming for a quick answer. The fix was always there, I just had not been patient enough to find it.',
+      'Everything worked. Honestly the fix was not that complicated, I just had not been patient enough to actually read properly before. That was the lesson.',
   },
   {
     id: 'final-project-jayjay',
     title: 'Two Weeks of Being Lost, Then Finally Getting It',
     summary:
-      'My final project at JayJay was supposed to show everything I learned. Instead the build kept breaking, the CI kept failing, and I could not figure out why. The commit history tells the whole story.',
+      'My final project kept breaking in ways I did not understand. The build failed, CI failed, and I made over 20 commits in two days just trying to get it to run. But I got through it.',
     category: 'Mindset',
     context: 'JayJay, final project',
     tags: ['JayJay', 'Final Project', 'Growth', 'Consistency', 'Problem Solving'],
     problem:
-      'My final project was a full QA automation framework covering both UI and API testing, running on GitHub Actions. The code itself was fine but the project kept refusing to build. Gradle could not resolve dependencies, the Cucumber runners were not picking up the right tests, and the HTML reports were throwing an ENOTDIR error in CI. Every time I fixed one thing, something else broke. I made over 20 commits in two days just trying to get it to run.',
+      'My final project at JayJay was a full automation framework with UI tests, API tests, and a GitHub Actions pipeline. The code was fine but the project would not build. Gradle kept failing to resolve things, the Cucumber runners were not picking up the right tests, and the reports were throwing some ENOTDIR error in CI. Every time I fixed one thing, something else broke. I was making commit after commit and going nowhere.',
     investigation:
-      'I went through it with my mentor and a classmate named Rizqi who ended up opening a pull request to help fix the failing test cases and runners. We found that the JUnit version was conflicting with the Cucumber runner setup, the report output paths were wrong for how CI handled directories, and some dependencies were under the wrong scope in build.gradle. None of these errors were obvious on their own, but they were all connected.',
+      'I talked through it with my mentor and a classmate named Rizqi. He ended up opening a pull request to help fix the failing test cases and runners. Together we figured out that the JUnit version was clashing with the Cucumber setup, the report paths were wrong for how CI handles directories, and some dependencies were in the wrong scope. None of them were obvious on their own but once we connected the dots it made sense.',
     solution:
-      'Fixed the Gradle config to use the right JUnit runner for Cucumber, corrected the HTML report plugin paths to include the full file path so CI would not throw ENOTDIR, and sorted out the dependency scopes. Merged Rizqi\'s PR, did a few more fixes on the GitHub Actions workflow, and finally got a clean run.',
+      'Fixed the Gradle config, corrected the report file paths so CI would not throw errors, sorted out the scopes, and merged Rizqi\'s PR. Then cleaned up the GitHub Actions workflow. Finally got a green run.',
     outcome:
-      'The project passed review and the CI pipeline ran green. But the bigger thing I took from this was about how I handle pressure. I kept spiraling instead of slowing down and reading the errors properly. Once I started treating each error one at a time instead of trying to fix everything at once, things started to move. And working through it with Rizqi showed me how much faster you get unstuck when you actually collaborate.',
+      'Project passed review. But more than that I learned that when I am stuck and stressed I stop thinking clearly. Once I started dealing with one error at a time instead of panicking about all of them, things moved. And honestly having Rizqi to work through it with made a huge difference.',
   },
 ]
