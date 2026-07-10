@@ -11,12 +11,10 @@
   inset: 0;
 }
 
-/* Orbs */
 .orb {
   position: absolute;
   border-radius: 50%;
   filter: blur(60px);
-  animation: orbFloat 7s ease-in-out infinite;
 }
 
 .orb-1 {
@@ -32,8 +30,7 @@
   height: 380px;
   top: 20%;
   right: -10%;
-  background: radial-gradient(circle, rgba(251,191,36,0.25) 0%, transparent 60%);
-  animation-delay: -2.5s;
+  background: radial-gradient(circle, rgba(251,191,36,0.22) 0%, transparent 60%);
 }
 
 .orb-3 {
@@ -41,17 +38,9 @@
   height: 300px;
   bottom: 0%;
   left: 20%;
-  background: radial-gradient(circle, rgba(247,147,26,0.2) 0%, transparent 60%);
-  animation-delay: -4.5s;
+  background: radial-gradient(circle, rgba(247,147,26,0.18) 0%, transparent 60%);
 }
 
-@keyframes orbFloat {
-  0%, 100% { transform: translateY(0) scale(1); }
-  40%       { transform: translateY(-30px) scale(1.06); }
-  70%       { transform: translateY(18px) scale(0.95); }
-}
-
-/* Spinning ring */
 .hero-ring {
   position: absolute;
   width: 700px;
@@ -59,15 +48,9 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  animation: ringRotate 22s linear infinite;
+  opacity: 0.75;
 }
 
-@keyframes ringRotate {
-  from { transform: translate(-50%, -50%) rotate(0deg); }
-  to   { transform: translate(-50%, -50%) rotate(360deg); }
-}
-
-/* Pulsing dots */
 .hero-dots {
   position: absolute;
   inset: 0;
@@ -76,18 +59,9 @@
 }
 
 .dot {
-  animation: dotPulse 3s ease-in-out infinite;
-}
-.dot-0 { animation-delay: 0s; }
-.dot-1 { animation-delay: -1s; }
-.dot-2 { animation-delay: -2s; }
-
-@keyframes dotPulse {
-  0%, 100% { opacity: 0.2; }
-  50%       { opacity: 0.9; }
+  opacity: 0.5;
 }
 
-/* Floating lines */
 .hero-lines {
   position: absolute;
   inset: 0;
@@ -96,13 +70,5 @@
 }
 
 .hline {
-  animation: lineFade 5s ease-in-out infinite;
-}
-.hline-0 { animation-delay: 0s; }
-.hline-1 { animation-delay: -1.7s; }
-.hline-2 { animation-delay: -3.4s; }
-
-@keyframes lineFade {
-  0%, 100% { opacity: 0.04; }
-  50%       { opacity: 0.12; }
+  opacity: 0.07;
 }

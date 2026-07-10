@@ -38,8 +38,8 @@ export default function Home() {
       <section className="hero">
         <HeroVisual />
         <div className="hero-content">
-          <span className="hero-tag">curious by nature, disciplined by choice</span>
-          <span className="hero-tag">I build, break, and figure it out.</span>
+          <span className="hero-tag">18 y/o, Indonesia</span>
+          <span className="hero-tag">QA automation, curiosity, and a lot of debugging.</span>
           <h1 className="hero-title">Learning by doing</h1>
           <p className="hero-sub">
             Spent my gap year learning QA automation at JayJay. Hit a lot of walls.
