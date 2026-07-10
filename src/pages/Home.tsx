@@ -1,7 +1,5 @@
 import { Link } from 'react-router-dom'
 import { problems } from '../data/problems'
-import HeroVisual from '../components/HeroVisual'
-import '../components/HeroVisual.css'
 import './Home.css'
 
 const categoryColors: Record<string, string> = {
