@@ -16,35 +16,35 @@ export const problems: Problem[] = [
     id: 'wrong-package-import',
     title: 'My Tests Could Not Find the Page Classes I Wrote',
     summary:
-      'Everything looked fine but the tests kept failing. Turned out one line of code was pointing to the wrong place the whole time.',
+      'Everything looked fine but the tests kept failing. Turned out one line was pointing to the wrong place the whole time.',
     category: 'Test Automation',
     context: 'JayJay, framework project',
     tags: ['Cucumber', 'Selenium', 'Java', 'Import', 'Package'],
     problem:
-      'I was building my first automation framework at JayJay. I wrote all the page classes, connected everything up, and ran the tests. But Java kept saying it could not find LoginPage. I could literally see the file sitting there. I had no idea what was going on.',
+      'I was building my first automation framework at JayJay. Wrote all the page classes, connected everything, and ran the tests. But Java kept saying it could not find LoginPage. I could literally see the file right there. I had no clue what was happening.',
     investigation:
-      'I asked my mentor and searched online but the answers I got were too general. I went back to my mentor again with more details and he pointed me to the import section. That is when I actually stopped and read the import line properly. It said import com.nathan.pages.LoginPage but my project was not using that package at all. That line was left over from a different project I had worked on before.',
+      'I asked my mentor and looked stuff up online but nothing I found was specific enough to help. Went back to my mentor with more details and he pointed me toward the import at the top of the file. That is when I actually stopped and read it properly. It said import com.nathan.pages.LoginPage, but that package did not even exist in this project. That line was copied over from a different repo I had worked on before and I never noticed.',
     solution:
-      'Changed the import to match the actual package in this project. One line fix. That was it.',
+      'Changed the import to match the actual package in this project. One line. That was literally it.',
     outcome:
-      'Tests ran right away. I felt pretty dumb honestly, but I learned that when nothing makes sense you just have to slow down and read everything again like you are seeing it for the first time.',
+      'Tests ran immediately. I felt kind of dumb but I got a really useful lesson out of it. When nothing makes sense, stop trying to think your way through it and just read the code slowly like you have never seen it before.',
   },
   {
     id: 'webdrivermanager-version-conflict',
     title: 'Chrome Kept Crashing Before Any Test Could Even Start',
     summary:
-      'Every time I ran the tests, Chrome crashed immediately. The code looked fine. It took me days of digging through docs with a classmate to find out the problem was in how I set up the dependencies.',
+      'Every time I ran the tests, Chrome crashed right away. The code looked fine. It took days of going through docs with a classmate before I finally found what was wrong.',
     category: 'Build and Dependencies',
     context: 'JayJay, final project setup',
     tags: ['Gradle', 'WebDriverManager', 'Selenium', 'Dependencies', 'Java'],
     problem:
-      'I set up my second project and ran the tests. Chrome opened for a second and then immediately crashed. The error said SessionNotCreatedException. I had no idea what that meant. The code looked exactly the same as my previous project so I knew the test logic was not the issue. Something in the setup was off but I could not see what.',
+      'Set up my second project and hit run. Chrome opened for maybe a second and then just crashed. The error said SessionNotCreatedException and I had no idea what that meant. The code structure was basically the same as my last project so I knew the tests themselves were not the problem. Something in the setup was broken but I could not figure out what.',
     investigation:
-      'Me and a classmate went through forums and docs together. We kept trying different things but nothing worked. After a few days I decided to just actually read the WebDriverManager and Selenium docs properly side by side instead of skimming for a quick answer. That is when I found it. The two libraries needed to be specific versions to work together, and I had also put WebDriverManager in the wrong place in build.gradle, so the driver was not even available when the tests ran.',
+      'Me and a classmate dug through forums and docs together. We kept trying things but nothing stuck. After a few days of going back and forth I just decided to actually sit down and read through the WebDriverManager and Selenium docs properly, side by side. That is when it clicked. The two libraries needed to be on matching versions to work together, and on top of that I had placed WebDriverManager in the wrong section of build.gradle, which meant the driver was not even loaded when the tests ran.',
     solution:
-      'Moved WebDriverManager to the right scope in build.gradle and matched the version numbers to what the docs said was compatible. Ran the tests again and Chrome opened fine.',
+      'Moved WebDriverManager to the right section in build.gradle and updated the versions to match what the docs said. Ran the tests again and Chrome opened without crashing.',
     outcome:
-      'Everything worked. Honestly the fix was not that complicated, I just had not been patient enough to actually read properly before. That was the lesson.',
+      'Everything worked after that. The actual fix was not even that hard. I just kept skipping over the docs trying to find a quick answer instead of actually reading them. Took me way longer than it should have.',
   },
   {
     id: 'final-project-jayjay',
