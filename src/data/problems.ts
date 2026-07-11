@@ -23,7 +23,7 @@ export const problems: Problem[] = [
     problem:
       'I was building my first automation framework at JayJay. Wrote all the page classes, connected everything, and ran the tests. But Java kept saying it could not find LoginPage. I could literally see the file right there. I had no clue what was happening.',
     investigation:
-      'I asked my mentor and looked stuff up online but nothing I found was specific enough to help. Went back to my mentor with more details and he pointed me toward the import at the top of the file. That is when I actually stopped and read it properly. It said import com.nathan.pages.LoginPage, but that package did not even exist in this project. That line was copied over from a different repo I had worked on before and I never noticed.',
+      'I asked my mentor and searched on AI and in the JayJay Discord but nothing I found was specific enough to help. Went back to my mentor with more details and he pointed me toward the import at the top of the file. That is when I actually stopped and read it properly. It said import com.nathan.pages.LoginPage, but that package did not even exist in this project. That line was copied over from a different repo I had worked on before and I never noticed.',
     solution:
       'Changed the import to match the actual package in this project. One line. That was literally it.',
     outcome:
@@ -40,7 +40,7 @@ export const problems: Problem[] = [
     problem:
       'Set up my second project and hit run. Chrome opened for maybe a second and then just crashed. The error said SessionNotCreatedException and I had no idea what that meant. The code structure was basically the same as my last project so I knew the tests themselves were not the problem. Something in the setup was broken but I could not figure out what.',
     investigation:
-      'Me and a classmate dug through forums and docs together. We kept trying things but nothing stuck. After a few days of going back and forth I just decided to actually sit down and read through the WebDriverManager and Selenium docs properly, side by side. That is when it clicked. The two libraries needed to be on matching versions to work together, and on top of that I had placed WebDriverManager in the wrong section of build.gradle, which meant the driver was not even loaded when the tests ran.',
+      'Me and a classmate tried asking AI and posted in the JayJay Discord to see if anyone had hit the same issue. We got some answers but nothing that actually fixed it. After a few days of going back and forth I just decided to actually sit down and read through the WebDriverManager and Selenium docs properly, side by side. That is when it clicked. The two libraries needed to be on matching versions to work together, and on top of that I had placed WebDriverManager in the wrong section of build.gradle, which meant the driver was not even loaded when the tests ran.',
     solution:
       'Moved WebDriverManager to the right section in build.gradle and updated the versions to match what the docs said. Ran the tests again and Chrome opened without crashing.',
     outcome:
