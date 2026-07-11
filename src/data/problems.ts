@@ -57,7 +57,7 @@ export const problems: Problem[] = [
     problem:
       'My final project was supposed to be the big one. Full automation framework, UI tests, API tests, running on GitHub Actions. I thought I was ready. Then I ran it and nothing worked. The build failed, the tests did not run, the reports crashed. I kept pushing fixes and kept breaking something else. At some point I had made over 20 commits and still had nothing to show.',
     investigation:
-      'I talked with my mentor and went through it with a classmate named Rizqi. He actually opened a pull request to help me fix the broken test runners. We found a few things all happening at the same time: the JUnit version was clashing with Cucumber, the report file paths were set up wrong so CI kept throwing errors, and some libraries were in the wrong place in the build file. None of it was obvious until we sat down and looked at it together.',
+      'I talked with my mentor and went through it with Rizqi, one of the mentors at JayJay. He actually opened a pull request to help me fix the broken test runners. We found a few things all happening at the same time: the JUnit version was clashing with Cucumber, the report file paths were set up wrong so CI kept throwing errors, and some libraries were in the wrong place in the build file. None of it was obvious until we sat down and looked at it together.',
     solution:
       'Fixed the build config, corrected the report paths, moved the libraries to the right place, and merged what Rizqi sent. Then cleaned up the GitHub Actions file. Finally got everything green.',
     outcome:

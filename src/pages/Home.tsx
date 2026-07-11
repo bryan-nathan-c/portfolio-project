@@ -52,7 +52,7 @@ export default function Home() {
       <section className="divider-section">
         <p className="divider-text">
           When I hit a wall, I ask around, look things up, and work through it with whoever can help.
-          Sometimes that means my mentor, sometimes the docs, sometimes just talking it through with someone.
+          Sometimes that means my mentor, sometimes AI, sometimes just talking it through with someone.
           I figure things out, but I have never done it alone.
         </p>
       </section>
