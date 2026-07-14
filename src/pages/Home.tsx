@@ -67,24 +67,30 @@ export default function Home() {
         <section className="about-section">
           <h2 className="section-heading">How I got here</h2>
           <p className="about-text">
-            I got into computers when I was 7. My mom helped me install games and I remember just
-            being obsessed with figuring out how everything worked. At some point I started doing it
-            myself, finding the files, running the installers, troubleshooting when something broke.
-            That was probably when it started.
+            I got into computers when I was 7. My mom helped me install games and I just got obsessed
+            trying to figure out how everything worked. Eventually I started doing it myself,
+            finding files, running installers, fixing things when they broke.
           </p>
           <p className="about-text">
-            In elementary school I joined a robotics program called Robotics Education Centre where
-            we built things like smart technology and basic robots. It was the first time I realized
-            building stuff with your hands and your brain at the same time was actually fun.
+            In elementary school I joined a robotics program called Robotics Education Centre
+            where we built smart technology and basic robots. That was the first time I realized
+            building things was actually fun.
           </p>
           <p className="about-text">
-            In high school I took IT as my focus and got really into coding. Me and my friends built
-            a small RPG game on Struckd, then a PVP version where we could actually play against each other.
-            Nothing serious, but it was the first time I made something that other people actually used.
+            In middle school I got my own PC. I started exploring GitHub and found all these
+            interesting projects people had built and shared for free. That kind of blew my mind
+            a little. People just putting their work out there for anyone to use.
           </p>
           <p className="about-text">
-            The gap year at JayJay was me trying to go deeper. I wanted to understand how software
-            actually gets tested and shipped, not just written. This site is what came out of that.
+            In high school I took IT as my focus and got into coding properly.
+            Me and my friends built a small RPG game on Struckd, then a PVP version
+            where we could actually play against each other. First time I made something
+            other people used.
+          </p>
+          <p className="about-text">
+            The gap year at JayJay was me going deeper into that. I wanted to understand
+            how software actually gets tested and shipped, not just written.
+            This site is what came out of that.
           </p>
         </section>
 
