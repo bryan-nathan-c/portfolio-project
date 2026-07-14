@@ -103,7 +103,7 @@ export default function Home() {
           <div className="about-body">
             <p className="about-text">
               I got into computers when I was 7. My mom helped me install games and I just got obsessed
-              trying to figure out how everything worked. Eventually I started doing it myself —
+              trying to figure out how everything worked. Eventually I started doing it myself,
               finding files, running installers, fixing things when they broke.
             </p>
             <p className="about-text">
