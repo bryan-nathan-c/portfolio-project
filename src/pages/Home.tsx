@@ -79,7 +79,8 @@ export default function Home() {
           <p className="about-text">
             In middle school I got my own PC. I started exploring GitHub and found all these
             interesting projects people had built and shared for free. That kind of blew my mind
-            a little. People just putting their work out there for anyone to use.
+            a little. People just putting their work out there for anyone to use. That was when
+            I knew I wanted to do the same thing someday.
           </p>
           <p className="about-text">
             In high school I took IT as my focus and got into coding properly.
