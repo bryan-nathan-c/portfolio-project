@@ -40,11 +40,11 @@ export const problems: Problem[] = [
     problem:
       'Set up my second project and hit run. Chrome opened for maybe a second and then just crashed. The error said SessionNotCreatedException and I had no idea what that meant. The code structure was basically the same as my last project so I knew the tests themselves were not the problem. Something in the setup was broken but I could not figure out what.',
     investigation:
-      'Me and a classmate tried asking AI and posted in the JayJay Discord to see if anyone had hit the same issue. We got some answers but nothing that actually fixed it. After a few days of going back and forth I just decided to actually sit down and read through the WebDriverManager and Selenium docs properly, side by side. That is when it clicked. The two libraries needed to be on matching versions to work together, and on top of that I had placed WebDriverManager in the wrong section of build.gradle, which meant the driver was not even loaded when the tests ran.',
+      'Me and a classmate tried asking AI and posted in the JayJay Discord to see if anyone had hit the same issue. We got some answers but nothing that actually fixed it. After a few days of going back and forth I just decided to actually sit down and go through the WebDriverManager and Selenium setup guides properly, side by side. That is when it clicked. The two libraries needed to be on matching versions to work together, and on top of that I had placed WebDriverManager in the wrong section of build.gradle, which meant the driver was not even loaded when the tests ran.',
     solution:
-      'Moved WebDriverManager to the right section in build.gradle and updated the versions to match what the docs said. Ran the tests again and Chrome opened without crashing.',
+      'Moved WebDriverManager to the right section in build.gradle and updated the versions to ones that actually work together. Ran the tests again and Chrome opened without crashing.',
     outcome:
-      'Everything worked after that. The actual fix was not even that hard. I just kept skipping over the docs trying to find a quick answer instead of actually reading them. Took me way longer than it should have.',
+      'Everything worked after that. The actual fix was not even that hard. I just kept looking for a quick answer instead of slowing down and reading things properly. Took me way longer than it should have.',
   },
   {
     id: 'final-project-jayjay',

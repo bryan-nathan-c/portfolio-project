@@ -51,7 +51,7 @@ export default function Home() {
             </h1>
             <p className="hero-sub">
               Spent my gap year learning QA automation at JayJay.
-              This site is the honest version of that journey.
+              Hit a lot of walls. Got through all of them.
             </p>
             <div className="hero-links">
               <Link to="/problems" className="link-primary">Case studies</Link>
@@ -65,7 +65,7 @@ export default function Home() {
             <div className="hero-card">
               <div className="hero-card-label">Course</div>
               <div className="hero-card-value">JayJay QA Automation</div>
-              <div className="hero-card-sub">Gap year, Indonesia</div>
+              <div className="hero-card-sub">2025, Indonesia</div>
             </div>
             <div className="hero-card">
               <div className="hero-card-label">Focus</div>
@@ -128,9 +128,12 @@ export default function Home() {
               This site is what came out of that.
             </p>
             <p className="about-text">
-              I have always worked on Windows. But I want to learn how to build on macOS too.
-              Apple Developer Academy is the place where I can do that, work with people
-              who actually care about how things are built, and start making things that matter to real users.
+              Through all of that I realized I am most alive when I am building something,
+              figuring something out, or helping something work better. I want to keep going in that direction,
+              and Apple Developer Academy feels like the right place to do it.
+            </p>
+            <p className="about-text">
+              You can reach me on <a href="https://id.linkedin.com/in/bryan-nathaniel-chandraa" target="_blank" rel="noreferrer" style={{color: 'var(--accent)'}}>LinkedIn</a> or check my work on <a href="https://github.com/bryan-nathan-c" target="_blank" rel="noreferrer" style={{color: 'var(--accent)'}}>GitHub</a>.
             </p>
           </div>
         </section>
