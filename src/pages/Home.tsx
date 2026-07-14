@@ -11,19 +11,19 @@ const categoryColors: Record<string, string> = {
 const projects = [
   {
     name: 'bryan-automation-portfolio',
-    desc: 'Final project. UI + API testing, GitHub Actions CI/CD. Took a few weeks and broke more times than I can remember.',
+    desc: 'My final project. Covers UI and API testing with a full CI/CD pipeline on GitHub Actions. This one took the longest and taught me the most.',
     langColor: '#f59e0b',
     url: 'https://github.com/bryan-nathan-c/bryan-automation-portfolio',
   },
   {
     name: 'cucumber-selenium-gradle-framework',
-    desc: 'BDD framework with Selenium. This is the one where the import was pointing at the wrong repo for days.',
+    desc: 'A BDD testing framework using Selenium. This is the one where a wrong import took me days to find.',
     langColor: '#f59e0b',
     url: 'https://github.com/bryan-nathan-c/cucumber-selenium-gradle-framework',
   },
   {
     name: 'gradle-greeting-task',
-    desc: 'Small one. Just me getting used to writing custom Gradle tasks with CLI params.',
+    desc: 'Small one. Just me getting comfortable with writing custom Gradle tasks.',
     langColor: '#22c55e',
     url: 'https://github.com/bryan-nathan-c/gradle-greeting-task',
   },
@@ -33,7 +33,6 @@ export default function Home() {
   return (
     <main className="home">
 
-      {/* Hero — full width with glow */}
       <section className="hero">
         <div className="hero-glow" />
         <div className="hero-grid" />
@@ -53,15 +52,6 @@ export default function Home() {
       </section>
 
       <div className="page-body">
-
-        {/* Divider quote */}
-        <section className="divider-section">
-          <p className="divider-text">
-            When I hit a wall, I ask around, look things up, and work through it with whoever can help.
-            Sometimes that means my mentor, sometimes AI, sometimes just talking it through with someone.
-            I figure things out, but I have never done it alone.
-          </p>
-        </section>
 
         {/* Backstory */}
         <section className="about-section">
@@ -92,6 +82,11 @@ export default function Home() {
             The gap year at JayJay was me going deeper into that. I wanted to understand
             how software actually gets tested and shipped, not just written.
             This site is what came out of that.
+          </p>
+          <p className="about-text">
+            I have always worked on Windows. But I want to learn how to build on macOS too.
+            Apple Developer Academy is the place where I can do that, work with people
+            who actually care about how things are built, and start making things that matter to real users.
           </p>
         </section>
 

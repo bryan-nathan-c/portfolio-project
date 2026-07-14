@@ -33,7 +33,7 @@ export const problems: Problem[] = [
     id: 'webdrivermanager-version-conflict',
     title: 'Chrome Kept Crashing Before Any Test Could Even Start',
     summary:
-      'Every time I ran the tests, Chrome crashed right away. The code looked fine. It took days of going through docs with a classmate before I finally found what was wrong.',
+      'Every time I ran the tests, Chrome crashed right away. The code looked fine. It took days of going back and forth with AI and asking around before I finally found what was wrong.',
     category: 'Build and Dependencies',
     context: 'JayJay, final project setup',
     tags: ['Gradle', 'WebDriverManager', 'Selenium', 'Dependencies', 'Java'],
