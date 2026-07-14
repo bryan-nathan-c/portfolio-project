@@ -4,7 +4,7 @@
 }
 
 .detail-back-wrap {
-  max-width: 780px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 7rem 2rem 0;
 }
@@ -13,19 +13,17 @@
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
-  color: #7a8190;
-  text-decoration: none;
+  color: var(--text-3);
   font-size: 0.875rem;
-  font-weight: 500;
-  transition: color 0.2s;
+  font-weight: 400;
+  transition: color 0.15s;
 }
 
-.back-link:hover { color: #c9cdd6; }
+.back-link:hover { color: var(--text-2); }
 
 .detail-hero {
   position: relative;
-  padding: 3rem 2rem 4rem;
-  text-align: center;
+  padding: 3rem 2rem 5rem;
   overflow: hidden;
 }
 
@@ -39,34 +37,36 @@
 .detail-hero-content {
   position: relative;
   z-index: 1;
-  max-width: 720px;
+  max-width: 800px;
   margin: 0 auto;
+  text-align: center;
 }
 
 .detail-category {
   display: block;
-  font-size: 0.72rem;
-  font-weight: 700;
+  font-size: 0.65rem;
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.12em;
-  margin-bottom: 1rem;
-  font-family: var(--mono, monospace);
+  margin-bottom: 1.25rem;
+  font-family: var(--mono);
 }
 
 .detail-title {
-  font-size: clamp(1.8rem, 4.5vw, 2.8rem);
-  font-weight: 900;
-  color: #f0f2f5;
-  margin: 0 0 1.25rem;
-  line-height: 1.1;
-  letter-spacing: -0.03em;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 700;
+  color: var(--text-1);
+  margin: 0 0 1.5rem;
+  line-height: 1.08;
+  letter-spacing: -0.04em;
 }
 
 .detail-summary {
   font-size: 1.05rem;
-  color: #9aa0ad;
+  color: var(--text-2);
   line-height: 1.75;
-  margin: 0 0 1.75rem;
+  margin: 0 0 2rem;
+  font-weight: 300;
 }
 
 .detail-tags {
@@ -77,94 +77,95 @@
 }
 
 .detail-tag {
-  font-size: 0.72rem;
-  font-weight: 500;
+  font-size: 0.7rem;
   padding: 0.2rem 0.65rem;
   border-radius: 100px;
-  background: rgba(255,255,255,0.05);
-  color: #7a8190;
-  border: 1px solid rgba(255,255,255,0.08);
+  background: var(--surface);
+  color: var(--text-3);
+  border: 0.5px solid var(--border);
 }
 
 .detail-body {
-  max-width: 680px;
+  max-width: 720px;
   margin: 0 auto;
-  padding: 2rem 2rem 4rem;
+  padding: 0 2rem 5rem;
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 3.5rem;
 }
 
 .step-block {
   display: grid;
-  grid-template-columns: 48px 1fr;
+  grid-template-columns: 56px 1fr;
   gap: 1.5rem;
   align-items: start;
+  border-top: 0.5px solid var(--border);
+  padding-top: 2rem;
 }
 
 .step-num {
-  font-size: 0.7rem;
-  font-weight: 700;
-  color: #2e3340;
+  font-size: 0.65rem;
+  font-weight: 500;
+  color: var(--text-4);
   letter-spacing: 0.05em;
-  padding-top: 0.35rem;
-  font-family: var(--mono, monospace);
+  padding-top: 0.2rem;
+  font-family: var(--mono);
 }
 
 .step-title {
-  font-size: 0.75rem;
-  font-weight: 700;
+  font-size: 0.65rem;
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: #4a5060;
-  margin-bottom: 0.65rem;
+  color: var(--text-3);
+  margin-bottom: 0.75rem;
 }
 
 .step-body {
   font-size: 1rem;
-  color: #c9cdd6;
+  color: var(--text-2);
   line-height: 1.85;
+  font-weight: 300;
 }
 
 .detail-nav {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
-  max-width: 780px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 2.5rem 2rem 6rem;
-  border-top: 1px solid rgba(255,255,255,0.07);
+  border-top: 0.5px solid var(--border);
 }
 
 .detail-nav-link {
   display: flex;
   flex-direction: column;
   gap: 0.4rem;
-  padding: 1.1rem 1.25rem;
-  border-radius: 10px;
-  text-decoration: none;
-  background: rgba(255,255,255,0.03);
-  border: 1px solid rgba(255,255,255,0.07);
+  padding: 1.25rem 1.5rem;
+  border-radius: 12px;
+  background: var(--surface);
+  border: 0.5px solid var(--border);
   transition: all 0.2s;
 }
 
 .detail-nav-link:hover {
-  background: rgba(255,255,255,0.05);
-  border-color: rgba(247, 147, 26, 0.25);
+  background: rgba(255,255,255,0.06);
+  border-color: var(--border-2);
 }
 
 .detail-nav-right { text-align: right; }
 
 .detail-nav-dir {
-  font-size: 0.75rem;
-  color: #4a5060;
-  font-weight: 500;
+  font-size: 0.72rem;
+  color: var(--text-4);
+  font-weight: 400;
 }
 
 .detail-nav-title {
   font-size: 0.9rem;
-  font-weight: 600;
-  color: #9aa0ad;
+  font-weight: 500;
+  color: var(--text-2);
   line-height: 1.3;
 }
 

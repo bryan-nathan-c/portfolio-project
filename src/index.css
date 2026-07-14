@@ -1,36 +1,51 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=JetBrains+Mono:wght@400;500&display=swap');
 
-*, *::before, *::after {
-  box-sizing: border-box;
-}
+*, *::before, *::after { box-sizing: border-box; }
 
 :root {
-  font-family: 'Inter', system-ui, sans-serif;
-  --mono: 'JetBrains Mono', monospace;
-  --orange: #f7931a;
+  --font: 'Inter', -apple-system, BlinkMacSystemFont, 'SF Pro Display', system-ui, sans-serif;
+  --mono: 'JetBrains Mono', 'SF Mono', monospace;
+
+  /* Apple-ish color tokens */
+  --bg:        #000000;
+  --bg-1:      #0a0a0a;
+  --bg-2:      #111111;
+  --bg-3:      #1c1c1e;
+  --surface:   rgba(255,255,255,0.04);
+  --border:    rgba(255,255,255,0.08);
+  --border-2:  rgba(255,255,255,0.12);
+
+  --text-1:    #f5f5f7;
+  --text-2:    #a1a1a6;
+  --text-3:    #6e6e73;
+  --text-4:    #3a3a3c;
+
+  --accent:    #f7931a;
+  --accent-dim: rgba(247,147,26,0.15);
+  --accent-border: rgba(247,147,26,0.3);
+
+  --blue:      #0a84ff;
+  --purple:    #bf5af2;
+  --green:     #30d158;
+
+  font-family: var(--font);
+  font-size: 16px;
   line-height: 1.5;
-  font-weight: 400;
-  color-scheme: dark;
-  color: #f4f5f7;
-  background-color: #1a1d27;
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
+  color: var(--text-1);
+  background: var(--bg);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
 }
 
-body {
-  margin: 0;
-  min-height: 100vh;
-  background: #1a1d27;
-}
-
+body { margin: 0; min-height: 100vh; background: var(--bg); }
 #root { min-height: 100vh; }
-a { color: inherit; }
-h1, h2, h3, h4, h5, h6 { margin: 0; }
+a { color: inherit; text-decoration: none; }
+h1,h2,h3,h4,h5,h6 { margin: 0; }
 p { margin: 0; }
 
-::selection { background: rgba(247,147,26,0.35); color: #fff; }
-::-webkit-scrollbar { width: 5px; }
+::selection { background: rgba(247,147,26,0.3); color: #fff; }
+::-webkit-scrollbar { width: 4px; }
 ::-webkit-scrollbar-track { background: transparent; }
-::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.15); border-radius: 3px; }
+::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.1); border-radius: 2px; }
