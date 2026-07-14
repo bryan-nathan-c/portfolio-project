@@ -57,6 +57,29 @@ export default function Home() {
         </p>
       </section>
 
+      <section className="about-section">
+        <p className="about-text">
+          I got into computers when I was 7. My mom helped me install games and I remember just
+          being obsessed with figuring out how everything worked. At some point I started doing it
+          myself, finding the files, running the installers, troubleshooting when something broke.
+          That was probably when it started.
+        </p>
+        <p className="about-text">
+          In elementary school I joined a robotics program called Robotics Education Centre where
+          we built things like smart technology and basic robots. It was the first time I realized
+          building stuff with your hands and your brain at the same time was actually fun.
+        </p>
+        <p className="about-text">
+          In high school I took IT as my focus and got really into coding. Me and my friends built
+          a small RPG game, then a PVP version where we could actually play against each other.
+          Nothing serious, but it was the first time I made something that other people actually used.
+        </p>
+        <p className="about-text">
+          The gap year at JayJay was me trying to go deeper. I wanted to understand how software
+          actually gets tested and shipped, not just written. This site is what came out of that.
+        </p>
+      </section>
+
       <section className="list-section">
         <div className="list-header">
           <span className="list-label">case studies</span>
