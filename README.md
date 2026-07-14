@@ -2,7 +2,7 @@
 
 A personal portfolio website built to showcase my projects and background — created as part of my application to the Apple Developer Academy.
 
-🔗 **Live site:** [portfolio-project.bryan-apple.workers.dev](https://portfolio-project.bryan-apple.workers.dev)
+🔗 **Live site:** [www.bryanportfolio.site](https://www.bryanportfolio.site)
 
 ## Tech Stack
 
