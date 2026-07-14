@@ -44,12 +44,10 @@ export default function Home() {
           <div className="hero-left">
             <div className="hero-eyebrow">
               <span className="hero-eyebrow-dot" />
-              Apple Developer Academy Applicant
+              Gap year, Indonesia
             </div>
             <h1 className="hero-title">
-              Bryan<br />
-              <span className="hero-title-dim">Nathaniel</span><br />
-              Chandra
+              Bryan <span className="hero-title-dim">Nathaniel</span> Chandra
             </h1>
             <p className="hero-sub">
               Spent my gap year learning QA automation at JayJay.
