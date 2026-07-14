@@ -71,7 +71,7 @@ export default function Home() {
         </p>
         <p className="about-text">
           In high school I took IT as my focus and got really into coding. Me and my friends built
-          a small RPG game, then a PVP version where we could actually play against each other.
+          a small RPG game on Struckd, then a PVP version where we could actually play against each other.
           Nothing serious, but it was the first time I made something that other people actually used.
         </p>
         <p className="about-text">
