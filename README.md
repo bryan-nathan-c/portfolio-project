@@ -1,6 +1,6 @@
 # Bryan's Portfolio
 
-A personal portfolio website built to showcase my projects and background — created as part of my application to the Apple Developer Academy.
+A personal portfolio website built to showcase my projects and background, created as part of my application to the Apple Developer Academy.
 
 🔗 **Live site:** [www.bryanportfolio.site](https://www.bryanportfolio.site)
 
