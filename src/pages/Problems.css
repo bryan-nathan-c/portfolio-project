@@ -195,6 +195,10 @@
 .no-results { padding: 4rem 0; color: var(--text-4); }
 
 @media (max-width: 600px) {
-  .problem-row { grid-template-columns: 1fr 24px; }
+  .problems-hero { padding: 7rem 1.5rem 3rem; }
+  .problems-body { padding: 0 1.5rem 4rem; }
+  .problem-row { grid-template-columns: 1fr 24px; gap: 1rem; }
   .problem-row-num { display: none; }
+  .problem-row-title { font-size: 0.95rem; }
+  .problem-row-summary { font-size: 0.82rem; }
 }

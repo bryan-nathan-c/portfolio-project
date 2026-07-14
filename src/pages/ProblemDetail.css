@@ -170,7 +170,12 @@
 }
 
 @media (max-width: 600px) {
-  .step-block { grid-template-columns: 1fr; gap: 0.5rem; }
+  .detail-back-wrap { padding: 5.5rem 1.5rem 0; }
+  .detail-hero { padding: 2rem 1.5rem 3rem; }
+  .detail-hero-content { text-align: left; }
+  .detail-tags { justify-content: flex-start; }
+  .detail-body { padding: 0 1.5rem 3rem; gap: 2.5rem; }
+  .step-block { grid-template-columns: 1fr; gap: 0.5rem; padding-top: 1.5rem; }
   .step-num { display: none; }
-  .detail-nav { grid-template-columns: 1fr; }
+  .detail-nav { grid-template-columns: 1fr; padding: 2rem 1.5rem 4rem; }
 }

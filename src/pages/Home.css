@@ -380,13 +380,36 @@
 @media (max-width: 900px) {
   .hero-inner {
     grid-template-columns: 1fr;
-    gap: 3rem;
+    gap: 2rem;
+    padding: 7rem 1.5rem 4rem;
   }
   .hero-right { display: none; }
-  .about-section { grid-template-columns: 1fr; gap: 1.5rem; }
-  .list-section { padding: 3.5rem 0; }
-  .list-header { grid-template-columns: 1fr auto; gap: 1rem; }
-  .list-row { grid-template-columns: 1fr 24px; gap: 1rem; }
+  .hero-title { font-size: clamp(2.4rem, 10vw, 3.5rem); }
+
+  .page-body { padding: 0 1.5rem; }
+
+  .about-section {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 3rem 0;
+  }
+
+  .list-section { padding: 3rem 0; }
+
+  .list-header {
+    grid-template-columns: 1fr auto;
+    gap: 0;
+    margin-bottom: 1.25rem;
+  }
+
+  .list-row {
+    grid-template-columns: 1fr 20px;
+    gap: 1rem;
+    padding: 1.25rem 0;
+  }
+
   .list-num { display: none; }
-  .closing-section { padding: 4rem 0 6rem; }
+
+  .closing-section { padding: 3.5rem 0 5rem; }
+  .closing-quote { font-size: 1.15rem; }
 }
