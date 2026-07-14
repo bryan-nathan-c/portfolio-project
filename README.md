@@ -1,45 +1,17 @@
-# Bryan's Portfolio
+# Bryan Nathaniel Chandra, Portfolio
 
-A personal portfolio website built to showcase my projects and background, created as part of my application to the Apple Developer Academy.
+This is my personal portfolio site. I built it during my gap year while studying QA automation at JayJay. The site documents real problems I ran into and how I got through them, not just a list of things I made.
 
-🔗 **Live site:** [www.bryanportfolio.site](https://www.bryanportfolio.site)
+Live at [bryanportfolio.site](https://www.bryanportfolio.site)
 
-## Tech Stack
+## What it is
 
-- **React** + **TypeScript**
-- **Vite** for build tooling and HMR
-- **Cloudflare Workers** for deployment
+A problem solving portfolio made for my Apple Developer Academy application. Three case studies based on actual bugs and struggles from my projects, written the way I actually experienced them.
 
-## Getting Started
+## Built with
 
-Install dependencies:
+React, TypeScript, Vite, deployed on Cloudflare Workers.
 
-```bash
-npm install
-```
+## Status
 
-Run the dev server:
-
-```bash
-npm run dev
-```
-
-Build for production:
-
-```bash
-npm run build
-```
-
-Deploy to Cloudflare Workers:
-
-```bash
-npx wrangler deploy
-```
-
-## About This Project
-
-This portfolio highlights my work and interests in iOS/Swift development, with an Xcode-inspired design. It's a work in progress as I continue to add real project details and refine the content.
-
-## License
-
-Personal project — all rights reserved.
+Done and live.
