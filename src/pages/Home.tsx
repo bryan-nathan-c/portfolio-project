@@ -119,9 +119,9 @@ export default function Home() {
             </p>
             <p className="about-text">
               In high school I took IT as my focus and got into coding properly.
-              Me and my friends built a small RPG game on Struckd, then a PVP version
-              where we could actually play against each other. First time I made something
-              other people used.
+              Me and my friends built a PVP game on Struckd where we could play against each other.
+              We split up the work, argued about how things should work, and figured it out together.
+              First time I made something other people actually used and had fun with.
             </p>
             <p className="about-text">
               The gap year at JayJay was me going deeper. I wanted to understand

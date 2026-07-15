@@ -61,6 +61,6 @@ export const problems: Problem[] = [
     solution:
       'Fixed the build config, corrected the report paths, moved the libraries to the right place, and merged what Rizqi sent. Then cleaned up the GitHub Actions file. Finally got everything green.',
     outcome:
-      'It passed. But honestly the biggest thing I got from this was realizing that when I am stressed I stop thinking straight. I was trying to fix ten things at once and making it worse. Once I slowed down and just focused on one thing at a time, it started working. And Rizqi helping made a huge difference too.',
+      'It passed. But the biggest thing I got from this was actually from working with Rizqi. Watching how calm and detail-oriented he was when going through the errors changed how I approached the whole thing. I stopped panicking and started actually reading. Once I slowed down and focused on one thing at a time, everything started moving. I would not have figured that out on my own.',
   },
 ]
