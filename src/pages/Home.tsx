@@ -75,11 +75,11 @@ export default function Home() {
             <div className="hero-card">
               <div className="hero-card-label">Stack</div>
               <div className="hero-card-value">
-                <span className="hero-card-accent">Java</span>
+                <span style={{ color: '#f89820' }}>Java</span>
                 {' · '}
-                <span className="hero-card-blue">Selenium</span>
+                <span style={{ color: '#43b02a' }}>Selenium</span>
                 {' · '}
-                <span className="hero-card-purple">Cucumber</span>
+                <span style={{ color: '#23d96c' }}>Cucumber</span>
               </div>
               <div className="hero-card-sub">Deployed on Cloudflare</div>
             </div>
@@ -131,9 +131,6 @@ export default function Home() {
               Through all of that I realized I am most alive when I am building something,
               figuring something out, or helping something work better. I want to keep going in that direction,
               and Apple Developer Academy feels like the right place to do it.
-            </p>
-            <p className="about-text">
-              You can reach me on <a href="https://id.linkedin.com/in/bryan-nathaniel-chandraa" target="_blank" rel="noreferrer" style={{color: 'var(--accent)'}}>LinkedIn</a> or check my work on <a href="https://github.com/bryan-nathan-c" target="_blank" rel="noreferrer" style={{color: 'var(--accent)'}}>GitHub</a>.
             </p>
           </div>
         </section>
