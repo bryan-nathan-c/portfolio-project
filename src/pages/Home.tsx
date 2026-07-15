@@ -3,7 +3,7 @@ import { problems } from '../data/problems'
 import './Home.css'
 
 const categoryColors: Record<string, string> = {
-  'Test Automation': 'var(--accent)',
+  'Test Automation': 'var(--orange)',
   'Build and Dependencies': 'var(--blue)',
   'Mindset': 'var(--purple)',
 }

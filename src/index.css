@@ -3,36 +3,38 @@
 *, *::before, *::after { box-sizing: border-box; }
 
 :root {
-  --font: 'Inter', -apple-system, BlinkMacSystemFont, 'SF Pro Display', system-ui, sans-serif;
-  --mono: 'JetBrains Mono', 'SF Mono', monospace;
+  --font: 'Inter', -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', system-ui, sans-serif;
+  --mono: 'JetBrains Mono', 'SF Mono', ui-monospace, monospace;
 
-  /* Warm creamy backgrounds */
-  --bg:        #f5f0e8;
-  --bg-1:      #ede8df;
-  --bg-2:      #e4ddd3;
-  --bg-3:      #d9d1c6;
+  /* Apple.com exact colors */
+  --bg:        #ffffff;
+  --bg-1:      #f5f5f7;
+  --bg-2:      #e8e8ed;
+  --bg-3:      #d2d2d7;
   --surface:   rgba(0,0,0,0.04);
-  --border:    rgba(0,0,0,0.1);
-  --border-2:  rgba(0,0,0,0.18);
+  --border:    rgba(0,0,0,0.08);
+  --border-2:  rgba(0,0,0,0.16);
 
-  /* Dark readable text on cream */
-  --text-1:    #1a1714;
-  --text-2:    #3d3830;
-  --text-3:    #6b6257;
-  --text-4:    #a09a91;
+  /* Apple.com text colors */
+  --text-1:    #1d1d1f;
+  --text-2:    #3d3d3f;
+  --text-3:    #6e6e73;
+  --text-4:    #a1a1a6;
 
-  /* Accent — warm brown-orange, fits cream well */
-  --accent:        #c8601a;
-  --accent-dim:    rgba(200,96,26,0.12);
-  --accent-border: rgba(200,96,26,0.3);
+  /* Accent — Apple blue */
+  --accent:        #0071e3;
+  --accent-dim:    rgba(0,113,227,0.1);
+  --accent-border: rgba(0,113,227,0.3);
 
-  --blue:   #1a65c8;
-  --purple: #7c3aed;
-  --green:  #166534;
+  --blue:   #0071e3;
+  --purple: #6e3deb;
+  --green:  #1d8348;
+  --orange: #f56300;
 
   font-family: var(--font);
-  font-size: 16px;
-  line-height: 1.5;
+  font-size: 17px;
+  line-height: 1.47059;
+  font-weight: 400;
   color: var(--text-1);
   background: var(--bg);
   color-scheme: light;
@@ -40,6 +42,7 @@
   -moz-osx-font-smoothing: grayscale;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
+  letter-spacing: -0.022em;
 }
 
 body { margin: 0; min-height: 100vh; background: var(--bg); }
@@ -48,7 +51,7 @@ a { color: inherit; text-decoration: none; }
 h1,h2,h3,h4,h5,h6 { margin: 0; }
 p { margin: 0; }
 
-::selection { background: rgba(200,96,26,0.2); color: var(--text-1); }
+::selection { background: rgba(0,113,227,0.2); color: var(--text-1); }
 ::-webkit-scrollbar { width: 4px; }
 ::-webkit-scrollbar-track { background: transparent; }
 ::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.15); border-radius: 2px; }

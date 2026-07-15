@@ -30,7 +30,7 @@
   left: -10%;
   width: 80vw;
   height: 100vh;
-  background: radial-gradient(ellipse at 20% 50%, rgba(200,96,26,0.08) 0%, transparent 60%);
+  background: radial-gradient(ellipse at 20% 50%, rgba(0,113,227,0.05) 0%, transparent 60%);
   pointer-events: none;
   z-index: 0;
 }
@@ -41,16 +41,15 @@
   right: -10%;
   width: 60vw;
   height: 80vh;
-  background: radial-gradient(ellipse at 80% 80%, rgba(26,101,200,0.06) 0%, transparent 60%);
+  background: radial-gradient(ellipse at 80% 80%, rgba(110,61,235,0.04) 0%, transparent 60%);
   pointer-events: none;
   z-index: 0;
 }
 
-/* Dot grid */
 .hero-dots-bg {
   position: absolute;
   inset: 0;
-  background-image: radial-gradient(circle, rgba(0,0,0,0.08) 1px, transparent 1px);
+  background-image: radial-gradient(circle, rgba(0,0,0,0.06) 1px, transparent 1px);
   background-size: 32px 32px;
   mask-image: radial-gradient(ellipse at 30% 50%, black 20%, transparent 70%);
   -webkit-mask-image: radial-gradient(ellipse at 30% 50%, black 20%, transparent 70%);
@@ -124,12 +123,13 @@
 
 .link-primary {
   font-size: 0.875rem;
-  font-weight: 500;
-  color: #f5f0e8;
-  background: var(--text-1);
+  font-weight: 400;
+  color: #fff;
+  background: var(--accent);
   padding: 0.6rem 1.4rem;
   border-radius: 100px;
   transition: opacity 0.15s;
+  letter-spacing: -0.01em;
 }
 
 .link-primary:hover { opacity: 0.85; }
