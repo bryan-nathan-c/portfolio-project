@@ -47,11 +47,12 @@ export default function Home() {
               Gap year, Indonesia
             </div>
             <h1 className="hero-title">
-              Bryan <span className="hero-title-dim">Nathaniel</span> Chandra
+              Hit a lot of walls.<br />
+              <span className="hero-title-dim">Got through all of them.</span>
             </h1>
             <p className="hero-sub">
-              Spent my gap year learning QA automation at JayJay.
-              Hit a lot of walls. Got through all of them.
+              I'm Bryan Nathaniel Chandra. Spent my gap year learning QA automation at JayJay.
+              This site is the honest version of that.
             </p>
             <div className="hero-links">
               <Link to="/problems" className="link-primary">Case studies</Link>
