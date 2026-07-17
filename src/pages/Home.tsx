@@ -65,7 +65,7 @@ export default function Home() {
           <div className="hero-right">
             <div className="hero-card">
               <div className="hero-card-label">Course</div>
-              <div className="hero-card-value">JayJay QA Automation</div>
+              <div className="hero-card-value" style={{ color: '#e8b84b' }}>JayJay QA Automation</div>
               <div className="hero-card-sub">2025, Indonesia</div>
             </div>
             <div className="hero-card">
@@ -86,7 +86,7 @@ export default function Home() {
             </div>
             <div className="hero-card">
               <div className="hero-card-label">Goal</div>
-              <div className="hero-card-value">Apple Developer Academy</div>
+              <div className="hero-card-value" style={{ color: '#0071e3' }}>Apple Developer Academy</div>
               <div className="hero-card-sub">Learning to build for people, not just systems</div>
             </div>
           </div>
