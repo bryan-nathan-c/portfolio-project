@@ -169,10 +169,12 @@ export default function Home() {
           </div>
           <div className="list-rows">
             {projects.map((proj) => (
-              <a href={proj.url} target="_blank" rel="noreferrer" key={proj.name} className="list-row">
-                <span className="proj-dot" style={{ background: proj.langColor }} />
+              <a href={proj.url} target="_blank" rel="noreferrer" key={proj.name} className="list-row repo-row">
                 <div className="list-row-body">
-                  <h3 className="proj-name">{proj.name}</h3>
+                  <div className="proj-name-row">
+                    <span className="proj-dot" style={{ background: proj.langColor }} />
+                    <h3 className="proj-name">{proj.name}</h3>
+                  </div>
                   <p className="list-desc">{proj.desc}</p>
                 </div>
                 <span className="list-arrow">↗</span>

@@ -312,12 +312,14 @@
   letter-spacing: -0.015em;
 }
 
-.proj-dot {
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  flex-shrink: 0;
-  margin-top: 0.35rem;
+.proj-name-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.repo-row {
+  grid-template-columns: 1fr 24px;
 }
 
 .proj-name {
@@ -409,6 +411,13 @@
   }
 
   .list-num { display: none; }
+
+  .proj-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
 
   .closing-section { padding: 3.5rem 0 5rem; }
   .closing-quote { font-size: 1.15rem; }
