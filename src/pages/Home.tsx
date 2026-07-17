@@ -65,7 +65,7 @@ export default function Home() {
           <div className="hero-right">
             <div className="hero-card">
               <div className="hero-card-label">Course</div>
-              <div className="hero-card-value" style={{ color: '#e8b84b' }}>JayJay QA Automation</div>
+              <div className="hero-card-value" style={{ color: '#1d1d1f' }}>JayJay QA Automation</div>
               <div className="hero-card-sub">2025, Indonesia</div>
             </div>
             <div className="hero-card">
