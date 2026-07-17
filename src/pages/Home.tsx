@@ -129,9 +129,10 @@ export default function Home() {
               This site is what came out of that.
             </p>
             <p className="about-text">
-              Through all of that I realized I am most alive when I am building something,
-              figuring something out, or helping something work better. I want to keep going in that direction,
-              and Apple Developer Academy feels like the right place to do it.
+              Through all of that I realized what I actually want to do is build things that make
+              someone's day easier or more fun. Not just fix broken systems, but make something
+              a person can pick up and feel like it was made for them.
+              Apple Developer Academy feels like the right place to learn how to do that.
             </p>
           </div>
         </section>
@@ -165,7 +166,7 @@ export default function Home() {
           <div className="list-header">
             <h2 className="section-heading">Repos</h2>
             <div />
-            <div />
+            <p className="list-desc" style={{margin: 0}}>Projects I built during JayJay</p>
           </div>
           <div className="list-rows">
             {projects.map((proj) => (

@@ -23,7 +23,7 @@ export const problems: Problem[] = [
     problem:
       'I was building my first automation framework at JayJay. Wrote all the page classes, connected everything, and ran the tests. But Java kept saying it could not find LoginPage. I could literally see the file right there. I had no clue what was happening.',
     investigation:
-      'I asked my mentor and searched on AI and in the JayJay Discord but nothing I found was specific enough to help. Went back to my mentor with more details and he pointed me toward the import at the top of the file. That is when I actually stopped and read it properly. It said import com.nathan.pages.LoginPage, but that package did not even exist in this project. That line was copied over from a different repo I had worked on before and I never noticed.',
+      'I Googled the error and asked AI but kept getting answers that were too general to help. I went back to my mentor with more details and he pointed me toward the import at the top of the file. That is when I actually stopped and read it properly. It said import com.nathan.pages.LoginPage, but that package did not even exist in this project. That line was copied over from a different repo I had worked on before and I never noticed.',
     solution:
       'Changed the import to match the actual package in this project. One line. That was literally it.',
     outcome:
