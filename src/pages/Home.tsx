@@ -121,7 +121,7 @@ export default function Home() {
               I knew I wanted to do the same thing someday.
             </p>
             <p className="about-text">
-              In high school I took IT as my focus and got into coding properly.
+              In high school I took IT as my focus and got into things like coding, networking, and how computer systems actually work.
               Me and my friends worked on IT projects together like building computer network topology simulations.
               We split up the work, figured things out together, and learned a lot from each other.
               First time I realized how much faster you move when you are working with people who care about the same thing.
