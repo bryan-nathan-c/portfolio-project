@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { problems } from '../data/problems'
+import { useScrollAnimation } from '../hooks/useScrollAnimation'
 import './Home.css'
 
 const categoryColors: Record<string, string> = {
@@ -30,6 +31,8 @@ const projects = [
 ]
 
 export default function Home() {
+  useScrollAnimation()
+
   return (
     <main className="home">
 
@@ -97,7 +100,7 @@ export default function Home() {
       <div className="page-body">
 
         {/* About */}
-        <section className="about-section">
+        <section className="about-section fade-up">
           <div className="about-label">
             <h2 className="section-heading">How I got here</h2>
           </div>
@@ -138,7 +141,7 @@ export default function Home() {
         </section>
 
         {/* Case studies */}
-        <section className="list-section">
+        <section className="list-section fade-up">
           <div className="list-header">
             <h2 className="section-heading">Case studies</h2>
             <div />
@@ -146,7 +149,7 @@ export default function Home() {
           </div>
           <div className="list-rows">
             {problems.map((p, i) => (
-              <Link to={`/problems/${p.id}`} key={p.id} className="list-row">
+              <Link to={`/problems/${p.id}`} key={p.id} className="list-row fade-up">
                 <span className="list-num">0{i + 1}</span>
                 <div className="list-row-body">
                   <span className="list-cat" style={{ color: categoryColors[p.category] ?? 'var(--accent)' }}>
@@ -162,7 +165,7 @@ export default function Home() {
         </section>
 
         {/* Repos */}
-        <section className="list-section">
+        <section className="list-section fade-up">
           <div className="list-header">
             <h2 className="section-heading">Repos</h2>
             <div />
@@ -170,7 +173,7 @@ export default function Home() {
           </div>
           <div className="list-rows">
             {projects.map((proj) => (
-              <a href={proj.url} target="_blank" rel="noreferrer" key={proj.name} className="list-row repo-row">
+              <a href={proj.url} target="_blank" rel="noreferrer" key={proj.name} className="list-row repo-row fade-up">
                 <div className="list-row-body">
                   <div className="proj-name-row">
                     <span className="proj-dot" style={{ background: proj.langColor }} />
@@ -185,7 +188,7 @@ export default function Home() {
         </section>
 
         {/* Closing */}
-        <section className="closing-section">
+        <section className="closing-section fade-up">
           <div className="closing-inner">
             <p className="closing-quote">
               "Grit isn't about being fearless. It's about keep going even when you're scared."
