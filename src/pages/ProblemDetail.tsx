@@ -29,14 +29,7 @@ export default function ProblemDetail() {
   return (
     <main className="detail-page">
 
-      {/* Back */}
-      <div className="detail-back-wrap">
-        <Link to="/problems" className="back-link">
-          ← Case Studies
-        </Link>
-      </div>
-
-      {/* Hero header */}
+      {/* Hero header - full bleed from top */}
       <div className="detail-hero">
         <div className="detail-hero-graphic">
           <svg className="detail-hero-svg" viewBox="0 0 1200 300" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
@@ -54,14 +47,17 @@ export default function ProblemDetail() {
             <line x1="0" y1="299" x2="1200" y2="299" stroke={color} strokeWidth="1.5" strokeOpacity="0.4" />
           </svg>
         </div>
-        <div className="detail-hero-content">
-          <span className="detail-category" style={{ color }}>{problem.category} / {problem.context}</span>
-          <h1 className="detail-title">{problem.title}</h1>
-          <p className="detail-summary">{problem.summary}</p>
-          <div className="detail-tags">
-            {problem.tags.map((tag) => (
-              <span key={tag} className="detail-tag">{tag}</span>
-            ))}
+        <div className="detail-hero-inner">
+          <Link to="/problems" className="back-link">← Case Studies</Link>
+          <div className="detail-hero-content">
+            <span className="detail-category" style={{ color }}>{problem.category} / {problem.context}</span>
+            <h1 className="detail-title">{problem.title}</h1>
+            <p className="detail-summary">{problem.summary}</p>
+            <div className="detail-tags">
+              {problem.tags.map((tag) => (
+                <span key={tag} className="detail-tag">{tag}</span>
+              ))}
+            </div>
           </div>
         </div>
       </div>
