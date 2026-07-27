@@ -37,8 +37,23 @@ export default function ProblemDetail() {
       </div>
 
       {/* Hero header */}
-      <div className="detail-hero" style={{ '--accent': color } as React.CSSProperties}>
-        <div className="detail-hero-glow" style={{ background: `radial-gradient(ellipse at top, ${color}22 0%, transparent 65%)` }} />
+      <div className="detail-hero">
+        <div className="detail-hero-graphic">
+          <svg className="detail-hero-svg" viewBox="0 0 1200 300" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+            <defs>
+              <pattern id="detailGrid" width="48" height="48" patternUnits="userSpaceOnUse">
+                <path d="M 48 0 L 0 0 0 48" fill="none" stroke="rgba(0,0,0,0.045)" strokeWidth="0.5"/>
+              </pattern>
+              <linearGradient id="detailFade" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stopColor="rgba(0,0,0,0.015)" />
+                <stop offset="100%" stopColor="rgba(0,0,0,0)" />
+              </linearGradient>
+            </defs>
+            <rect width="1200" height="300" fill="url(#detailGrid)" />
+            <rect width="1200" height="300" fill="url(#detailFade)" />
+            <line x1="0" y1="299" x2="1200" y2="299" stroke={color} strokeWidth="1.5" strokeOpacity="0.4" />
+          </svg>
+        </div>
         <div className="detail-hero-content">
           <span className="detail-category" style={{ color }}>{problem.category} / {problem.context}</span>
           <h1 className="detail-title">{problem.title}</h1>

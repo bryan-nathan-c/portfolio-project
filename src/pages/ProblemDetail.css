@@ -25,6 +25,19 @@
   position: relative;
   padding: 3rem 2rem 5rem;
   overflow: hidden;
+  border-bottom: 0.5px solid var(--border);
+}
+
+.detail-hero-graphic {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.detail-hero-svg {
+  width: 100%;
+  height: 100%;
 }
 
 .detail-hero-glow {
