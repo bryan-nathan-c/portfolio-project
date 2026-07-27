@@ -122,9 +122,9 @@ export default function Home() {
             </p>
             <p className="about-text">
               In high school I took IT as my focus and got into coding properly.
-              Me and my friends built a PVP game on Struckd where we could play against each other.
-              We split up the work, argued about how things should work, and figured it out together.
-              First time I made something other people actually used and had fun with.
+              Me and my friends worked on IT projects together like building computer network topology simulations.
+              We split up the work, figured things out together, and learned a lot from each other.
+              First time I realized how much faster you move when you are working with people who care about the same thing.
             </p>
             <p className="about-text">
               The gap year at JayJay was me going deeper. I wanted to understand
