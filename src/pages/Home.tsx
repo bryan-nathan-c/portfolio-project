@@ -135,7 +135,7 @@ export default function Home() {
               Through all of that I realized what I actually want to do is build things that make
               someone's day easier or more fun. Not just fix broken systems, but make something
               a person can pick up and feel like it was made for them.
-              Apple Developer Academy feels like the right place to learn how to do that.
+              Apple Developer Academy is where I want to learn how to do that.
             </p>
           </div>
         </section>
