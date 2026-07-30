@@ -385,6 +385,7 @@
     gap: 2rem;
     padding: 7rem 1.5rem 4rem;
   }
+  .hero { min-height: unset; }
   .hero-right {
     display: grid;
     grid-template-columns: 1fr 1fr;
