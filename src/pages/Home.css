@@ -1,6 +1,7 @@
 .home {
   width: 100%;
   overflow-x: hidden;
+  touch-action: pan-y;
 }
 
 /* ── Hero ── */
@@ -10,8 +11,7 @@
   min-height: 100vh;
   display: flex;
   align-items: center;
-  overflow: visible;
-  touch-action: pan-y;
+  overflow: hidden;
 }
 
 /* Noise texture removed - too heavy for performance */
