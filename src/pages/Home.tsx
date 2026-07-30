@@ -185,7 +185,7 @@ export default function Home() {
         <section className="closing-section fade-up">
           <div className="closing-inner">
             <p className="closing-quote">
-              "Grit isn't about being fearless. It's about keep going even when you're scared."
+              "Grit isn't about being fearless. It's about continuing even when you're scared."
             </p>
             <span className="closing-name">bryan nathaniel chandra</span>
           </div>
