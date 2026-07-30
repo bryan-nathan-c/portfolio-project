@@ -394,41 +394,35 @@
 
 /* Hero stagger on load */
 .hero-eyebrow {
-  animation: heroFadeUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.1s both;
+  animation: heroFadeUp 0.5s ease 0.1s both;
 }
 .hero-title {
-  animation: heroFadeUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.25s both;
+  animation: heroFadeUp 0.5s ease 0.2s both;
 }
 .hero-sub {
-  animation: heroFadeUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.4s both;
+  animation: heroFadeUp 0.5s ease 0.3s both;
 }
 .hero-links {
-  animation: heroFadeUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.55s both;
+  animation: heroFadeUp 0.5s ease 0.4s both;
 }
 
 /* Hero cards stagger */
-.hero-card:nth-child(1) { animation: heroFadeUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.3s both; }
-.hero-card:nth-child(2) { animation: heroFadeUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.42s both; }
-.hero-card:nth-child(3) { animation: heroFadeUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.54s both; }
-.hero-card:nth-child(4) { animation: heroFadeUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.66s both; }
+.hero-card:nth-child(1) { animation: heroFadeUp 0.5s ease 0.25s both; }
+.hero-card:nth-child(2) { animation: heroFadeUp 0.5s ease 0.32s both; }
+.hero-card:nth-child(3) { animation: heroFadeUp 0.5s ease 0.39s both; }
+.hero-card:nth-child(4) { animation: heroFadeUp 0.5s ease 0.46s both; }
 
 @keyframes heroFadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
 
 /* Scroll fade-up for sections */
 .fade-up {
   opacity: 0;
-  transform: translateY(28px);
-  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
-              transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  transform: translateY(16px);
+  transition: opacity 0.5s ease,
+              transform 0.5s ease;
   will-change: opacity, transform;
 }
 
@@ -440,11 +434,11 @@
 
 /* Stagger delays for list rows */
 .fade-up:nth-child(1) { transition-delay: 0s; }
-.fade-up:nth-child(2) { transition-delay: 0.08s; }
-.fade-up:nth-child(3) { transition-delay: 0.16s; }
-.fade-up:nth-child(4) { transition-delay: 0.24s; }
-.fade-up:nth-child(5) { transition-delay: 0.32s; }
-.fade-up:nth-child(6) { transition-delay: 0.4s; }
+.fade-up:nth-child(2) { transition-delay: 0.06s; }
+.fade-up:nth-child(3) { transition-delay: 0.12s; }
+.fade-up:nth-child(4) { transition-delay: 0.18s; }
+.fade-up:nth-child(5) { transition-delay: 0.24s; }
+.fade-up:nth-child(6) { transition-delay: 0.3s; }
 
 /* Arrow slide on row hover */
 .list-row:hover .list-arrow {
