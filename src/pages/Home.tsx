@@ -38,9 +38,6 @@ export default function Home() {
 
       {/* Hero */}
       <section className="hero">
-        <div className="hero-glow" />
-        <div className="hero-glow-2" />
-        <div className="hero-dots-bg" />
         <div className="hero-inner">
 
           {/* Left */}
