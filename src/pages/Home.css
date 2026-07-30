@@ -406,19 +406,15 @@
   transform: none;
 }
 
-/* Scroll fade-up for sections */
+/* Scroll fade-up disabled for performance */
 .fade-up {
-  opacity: 0;
-  transform: translateY(16px);
-  transition: opacity 0.5s ease,
-              transform 0.5s ease;
-  will-change: opacity, transform;
+  opacity: 1;
+  transform: none;
 }
 
 .fade-up.is-visible {
   opacity: 1;
-  transform: translateY(0);
-  will-change: auto;
+  transform: none;
 }
 
 /* Stagger delays for list rows */

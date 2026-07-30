@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom'
 import { problems } from '../data/problems'
-import { useScrollAnimation } from '../hooks/useScrollAnimation'
 import './Home.css'
 
 const categoryColors: Record<string, string> = {
@@ -31,8 +30,6 @@ const projects = [
 ]
 
 export default function Home() {
-  useScrollAnimation()
-
   return (
     <main className="home">
 
