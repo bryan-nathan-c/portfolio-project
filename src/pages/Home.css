@@ -392,29 +392,18 @@
 
 /* ── Animations ── */
 
-/* Hero stagger on load */
-.hero-eyebrow {
-  animation: heroFadeUp 0.5s ease 0.1s both;
-}
-.hero-title {
-  animation: heroFadeUp 0.5s ease 0.2s both;
-}
-.hero-sub {
-  animation: heroFadeUp 0.5s ease 0.3s both;
-}
-.hero-links {
-  animation: heroFadeUp 0.5s ease 0.4s both;
-}
-
-/* Hero cards stagger */
-.hero-card:nth-child(1) { animation: heroFadeUp 0.5s ease 0.25s both; }
-.hero-card:nth-child(2) { animation: heroFadeUp 0.5s ease 0.32s both; }
-.hero-card:nth-child(3) { animation: heroFadeUp 0.5s ease 0.39s both; }
-.hero-card:nth-child(4) { animation: heroFadeUp 0.5s ease 0.46s both; }
-
-@keyframes heroFadeUp {
-  from { opacity: 0; transform: translateY(12px); }
-  to   { opacity: 1; transform: translateY(0); }
+/* Hero loads instantly - no animation */
+.hero-eyebrow,
+.hero-title,
+.hero-sub,
+.hero-links,
+.hero-card:nth-child(1),
+.hero-card:nth-child(2),
+.hero-card:nth-child(3),
+.hero-card:nth-child(4) {
+  animation: none;
+  opacity: 1;
+  transform: none;
 }
 
 /* Scroll fade-up for sections */
